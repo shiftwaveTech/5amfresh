@@ -15,22 +15,40 @@
        <section class="plan-1">
            <div class="container">
                <div class="row">
-                   <div class="col-7 custom-plan">
-                       <h3><span>Plan <?=$cost ?>  </span></h3>
+                  
+                   <div class="col-md-3 text-center custom-plan">
+                       <h3><span>Plan 399 </span></h3>
                        <p>Recommended for 2 adults</p>
                    </div>
-                   <div class="col-5 text-center">
-                       <div class="plan-price-1 custom-plan">
-                        <h3><span> ₹ <?=$cost ?> </span> </h3>
+                   
+                       <div class=" col-md-6 text-center pb-3 pt-3">
+                         <a href="" class="plan-btn">₹599</a>
+                         <a href="" class="plan-btn">₹799</a>
+                         <a href="" class="plan-btn">₹999</a>
+                         <a href="" class="plan-btn">Custom</a>
+                      </div>
+                   
+                   <div class="col-md-3 text-center plans">
+                       <div class="plan-price-1 custom-plan ">
+                        <h3><span> ₹ 399 </span> </h3>
                        <p>Per Week, Billed Monthly</p>
                        </div>
                    </div>
                   
                </div>
+             
 
       
            </div>
        </section> 
+       
+        <div class="d-flex align-items-center justify-content-center text-center pt-4">
+                    <div class="custom-plan">
+                        <h2>15 Varieties of	<span>Vegetables</span></h2>
+                        <h5>(Approx Weight : 7kgs)</h5>
+                        <p>Experience the freshest and highest quality vegetables with our Plan 399. Perfectly designed for a family of 2+1 or more, this plan includes a diverse selection of 15 varieties of vegetables with a total approximate weight of 7 kgs. Enjoy the convenience of having fresh vegetables delivered to your doorstep every week.</p>
+                    </div>
+                </div> 
 
        <!-- subscribe-page-select-plan-1 -->
        <div class="margins-of-sec-1">
@@ -54,6 +72,7 @@
                     <div class="custom-plan">
                         <h2>Must Have <span>Vegetables</span></h2>
                         <h5>(All Included)</h5>
+                        <p>Our plan ensures you get a complete mix of essential vegetables that are a staple in every kitchen.</p>
                     </div>
                 </div>   
             <div class="row mt-2">
@@ -160,6 +179,7 @@
                         <div class="custom-plan">
                             <h2>Other <span>Vegetables</span></h2>
                             <h5>(Three Included - 250 gms Each)</h5>
+                            <p>Vegetables are selected based on seasonal availability. We will ensure to include any 3 varieties from this category.</p>
                         </div>
                     </div>
 
@@ -261,6 +281,7 @@
                     <div class="custom-plan">
                         <h2>leafy <span>Vegetables</span></h2>
                         <h5>(One Included - 250gms)</h5>
+                        <p>Get a dose of fresh leafy greens to keep your meals healthy and vibrant.</p>
                     </div>
                 </div>       
                 <div class="row mt-2">
@@ -316,6 +337,7 @@
                     <div class="custom-plan">
                         <h2>Root <span>Vegetables</span></h2>
                         <h5>(One Included - 250gms)</h5>
+                        <p>Add a crunchy and nutritious touch to your dishes with root vegetables.</p>
                     </div>
                 </div>
 
@@ -377,6 +399,7 @@
                         <div class="custom-plan">
                                 <h2>Squash <span>Vegetables</span></h2>
                                 <h5>(One Included - 250gms)</h5>
+                                <p>Enhance your culinary creations with versatile squash vegetables.</p>
                             </div>
                     </div>   
                     <div class="row mt-2">
@@ -433,6 +456,7 @@
                     <div class="custom-plan">
                         <h2>Podded <span>Vegetables</span></h2>
                         <h5>(One Included - 250gms) Each</h5>
+                        <p>Incorporate the freshness of podded vegetables into your weekly meals.</p>
                     </div>
                 </div>
 
@@ -491,22 +515,22 @@
                 <div class="why-freshoo">
                     <div class="container">
                         <div class="row">                  
-                            <div class="col-md-5">
+                            <div class="col-md-6" >
                                 <!-- Text content -->
-                                <h2>Why <span>Freshoo ?</span></h2>
-                                <div class="mt-4">
+                                <h2><span>Why Choose Plan 399?</span></h2>
+                               <!-- <div class="mt-4">
                                     <div class="d-flex flex-row justify-content-start">
                                         <i class='fa fa-check-circle why-icon-style'></i>
                                         <p class="why-sec-content">Fresh Vegetables </p>
                                     </div>
-                                    <!-- icon 1  -->
+                                    
 
                                     <div class="d-flex flex-row justify-content-start">
                                         <i class='fa fa-check-circle why-icon-style'></i>
                                         <p class="why-sec-content">Cleaned and packed</p>
                                     </div>
 
-                                    <!-- icon 2  -->
+                                  
 
                                     <div class="d-flex flex-row justify-content-start">
                                         <i class='fa fa-check-circle why-icon-style'></i>
@@ -515,36 +539,58 @@
 
                             
 
-                                    <!-- icon 3  -->
+                                    
 
                                     <div class="d-flex flex-row justify-content-start">
                                         <i class='fa fa-check-circle why-icon-style'></i>
                                         <p class="why-sec-content">Lowest price in the town</p>
                                     </div>
 
-                                    <!-- icon 4  -->
+                                    
 
                                     <div class="d-flex flex-row justify-content-start">
                                         <i class='fa fa-check-circle why-icon-style'></i>
                                         <p class="why-sec-content">No surcharge no hidden charge</p>
                                     </div>
-                                    <!-- icon 5 -->
+                                    
 
                                     <div class="d-flex flex-row justify-content-start">
                                         <i class='fa fa-check-circle why-icon-style'></i>
                                         <p class="why-sec-content">100% quality guarentee</p>
                                     </div>
 
-                                    <!-- icon 6 -->
+                                  
                                             
 
                                     <div class="d-flex flex-row justify-content-start">
                                         <i class='fa fa-check-circle why-icon-style'></i>
                                         <p class="why-sec-content">Cancel any time</p>
                                     </div>
-                                </div>
+                                </div>-->
+                                
+                        <div class="mt-4">
+                           <div class="d-flex flex-row justify-content-start">
+                             <i class='fa fa-check-circle why-icon-style'></i>
+                             <p class=""><b>Convenient Weekly Deliveries:</b> Fresh vegetables delivered to your doorstep every week.</p>
+                          </div>
+                          <div class="d-flex flex-row justify-content-start">
+                             <i class='fa fa-check-circle why-icon-style'></i>
+                             <p class=""><b>High-Quality Produce:</b> Sourced directly from farmers and wholesalers to ensure freshness and quality.</p>
+                          </div>
+                          <div class="d-flex flex-row justify-content-start">
+                             <i class='fa fa-check-circle why-icon-style'></i>
+                             <p class=""><b>Diverse Selection:</b> 15 varieties of vegetables to meet all your dietary needs.</p>
+                          </div>
+                          <div class="d-flex flex-row justify-content-start">
+                             <i class='fa fa-check-circle why-icon-style'></i>
+                             <p class=""><b>Affordable Pricing:</b> FGet premium vegetables at an economical price of ₹399 per week, billed monthly.</p>
+                          </div>
+                        </div>
+                                
+                                
+                                
                             </div>
-                            <div class="col-md-7">
+                            <div class="col-md-6">
                     
             
                                 <!-- Image -->
@@ -556,6 +602,9 @@
                 </div>
             </div>
         </div>
+             
+             
+        
 
        <!-- accordions  -->
 
@@ -631,6 +680,11 @@
             </div>
 
             <div>
+              <div class="col-12 text-center">
+                  <h3><b>Start enjoying fresh, nutritious vegetables with Plan 399 today!</b></h3>
+              </div>
+                
+
                 <div class="container button-style-1 mt-4 mb-4">
                     <a id="create-custom-plan" style="cursor:pointer;"  class="create-plan-button text-white text-decoration-none">  Create Your Own Plan<p> Minimum Value ₹1000 per Week</p></a>                   
                     <a  class="new-compare text-center padding-top-compare text-white text-decoration-none"> Compare Plans</a>
@@ -653,7 +707,7 @@
                         <div class="footer-above-cont">              
                             <div class="d-flex flex-column align-items-center justify-content-center">
                                 <!-- Text content -->
-                                <h2>Sign Up Now</h2> 
+                                <h2>Subscribe Now </h2> 
                                 <h3>Get One Week</h3> 
                                 <h1>FREE</h1>   
                                 <button class="click-here-btn">Click Here</button>   
