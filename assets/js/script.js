@@ -1,6 +1,4 @@
-var baseurl = 'http://localhost/freshoo/';
-// var baseurl = 'http://52.9.131.111/mockups/des-12/freshoo/';
-
+var baseurl = 'http://localhost/Freshoo/';
 
 var offerDivId = '';
 var offerCost = '';

@@ -1,4 +1,4 @@
-var baseurl = 'http://localhost/freshoo/';
+var baseurl = 'http://localhost/Freshoo/';
 
 $(document).on('click', '#create-custom-plan', function(){
     var url = baseurl+'custom-plan'; 
