@@ -1,0 +1,22 @@
+  /* body{ background-color: #f4f4f4; font-family:'open sans'; } */
+  h2, h3, h4 {font-family: "Costa Ptf Demi"; color: #666666; font-weight:bold;margin-bottom:0}
+ 
+
+  span{color: #0f9b49;}
+  .plan-1{padding: 2rem 1rem 1rem 1rem;}
+  .plan-price-1{float: right;}
+  
+  .drp-style {max-width: 100%;width: 100%; display: block;position: relative;z-index: 1; margin: 5px; padding: 15px 15px;border-radius:20px;border: 1px solid #E5E4E2; resize:none;}
+
+  .plan-sub{background-color: #f4f4f4; border-radius: 30px;padding:1.5rem;margin:30px 50px;}
+  input {max-width: 100%;width: 100%; display: block;position: relative;z-index: 1; margin: 5px; padding: 15px 15px;border-radius:20px;border: 1px solid #E5E4E2; resize:none;}
+  label{padding: 5px 10px;}
+   .btn-next{ font-family: "Costa Ptf Demi";border-radius:20px;background-color: #fd632f; color: #fff; border-color:#fd632f;padding: .75rem 7rem; border:none;justify-content: center;font-size: 18px;letter-spacing: 1px;}
+  @media(max-width:768px){
+     
+  h2{font-size:40px;}
+  h3{font-size:32px;} 
+  .plan-sub{padding: 15px 0 0 0;margin: 10px 20px;}
+  input, textarea {margin: 5px 0;} 
+  .plan-1{padding: 2rem 0rem 1rem 0rem;}       
+  }
