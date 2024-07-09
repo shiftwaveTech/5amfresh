@@ -27,7 +27,7 @@
                 <h1>Fresh Vegetables,<span><br> direct to your doorstep.</span> </h1>
                 </div> 
                 <div class="banner-content">
-                    <h1>Tomatoes Price<span class="banner-text">as on 27 Feb 2024, Vizag</span></h1>
+                    <h1>Tomatoes <span class="banner-text">as on 27 Feb 2024, Vizag</span></h1>
                     <div class="price-plate">
                         <span>OUR PRICE</span>
                         <span>₹18/KG*</span>
