@@ -1,9 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
-
-/* @import url('http://fonts.cdnfonts.com/css/helvetica-neue-9'); */
                 
 
 *{
@@ -17,10 +14,10 @@ a, a:hover{
 }
 
 body{
-	color:#3E3E3F;
+	color:#666 !important;
 	font-size:16px;
-/*	font-family: 'Open Sans', sans-serif;*/
-    font-family: Helvetica;
+	font-family: 'Open Sans', sans-serif;
+/*    font-family: Helvetica;*/
     overflow-x: hidden;
 /*    background-image: linear-gradient(#f4f4f4, white) !important;*/
 }
@@ -30,7 +27,6 @@ body{
     cursor: pointer;
     text-align: center;
 }
-
 
 .color-theme{
     color:#0f9b49;
@@ -62,6 +58,10 @@ body{
     display: inline-block;
 }
 
+p{
+    font-family: "Open Sans";
+    font-size: 16px;
+}
 
 /*Sticky Header*/
 
@@ -444,15 +444,16 @@ header .submenu .link-2 .navlink{
 
 footer{
     background: #292d31;
-    color:#bbb;
+/*    color:#bbb;*/
     font-size: 16px;
     padding: 1rem;
     margin-bottom:0;
     padding: 0;
+    border-top: 1px solid #ddd;
 }
 
 footer a, footer a:hover{
-    color:#000;
+    color: #666;
 /*    font-weight: 700;*/
 }
 
@@ -611,56 +612,56 @@ footer a, footer a:hover{
 .accordion-styles details summary span{
     margin-left: 30px;
 }
-    .accordion-styles details summary {
-        padding: 5px 0;
-        cursor: pointer;
-        font-weight: 600;
-        color:var(--themecolor);
-        position: relative;
-    }
-    .accordion-styles details summary::marker {
-        transition-duration: .5s;
-        content: " ";
-    }
-    .accordion-styles details[open] summary::marker{
-        transition-duration: .5s;
-        content: " ";
-    }
-    .accordion-styles details .content-acc{
-        animation: fadeIn;
-        animation-duration: 1s;
-    }
-    .accordion-styles details[open] summary::after{
-        content: "\f068";
-    }
-    .accordion-styles.acc-style-3 details, .accordion-styles.acc-style-4 details{
-        padding: 0;
-        margin-bottom: 10px;
-        background: rgba(251, 249, 252, 1);
-    }
-    .accordion-styles.acc-style-3 details summary, .accordion-styles.acc-style-4 details summary{
-        background: rgba(123, 57, 155, 1); 
-        color: #fff;
-        padding: 1.5rem;
-        display: flex;
-        align-items: center;
-    }
-    .accordion-styles.acc-style-3 details[open] summary, .accordion-styles.acc-style-4 details[open] summary{
-        color:#fff;
-    }
-    .accordion-styles.acc-style-4 details summary{
-        position: relative;
-    }
-    .accordion-styles.acc-style-3 details .content-acc, .accordion-styles.acc-style-4 details .content-acc{
-        padding: 1.5rem 20px;
-        transition-duration: 1s;
-    }
-    .accordion-styles details summary::after{
-        content: "\f067";
-        font-family: "Font Awesome 5 Pro";
-        position: absolute;
-        left: 25px;
-    }
+.accordion-styles details summary {
+    padding: 5px 0;
+    cursor: pointer;
+    font-weight: 600;
+    color:var(--themecolor);
+    position: relative;
+}
+.accordion-styles details summary::marker {
+    transition-duration: .5s;
+    content: " ";
+}
+.accordion-styles details[open] summary::marker{
+    transition-duration: .5s;
+    content: " ";
+}
+.accordion-styles details .content-acc{
+    animation: fadeIn;
+    animation-duration: 1s;
+}
+.accordion-styles details[open] summary::after{
+    content: "\f068";
+}
+.accordion-styles.acc-style-3 details, .accordion-styles.acc-style-4 details{
+    padding: 0;
+    margin-bottom: 10px;
+    background: rgba(251, 249, 252, 1);
+}
+.accordion-styles.acc-style-3 details summary, .accordion-styles.acc-style-4 details summary{
+    background: rgba(123, 57, 155, 1); 
+    color: #fff;
+    padding: 1.5rem;
+    display: flex;
+    align-items: center;
+}
+.accordion-styles.acc-style-3 details[open] summary, .accordion-styles.acc-style-4 details[open] summary{
+    color:#fff;
+}
+.accordion-styles.acc-style-4 details summary{
+    position: relative;
+}
+.accordion-styles.acc-style-3 details .content-acc, .accordion-styles.acc-style-4 details .content-acc{
+    padding: 1.5rem 20px;
+    transition-duration: 1s;
+}
+.accordion-styles details summary::after{
+    content: "\f067";
+    font-family: "Font Awesome 5 Pro";
+    position: absolute;
+    left: 25px;
+}
 @media (max-width:600px){
     .accordion-styles details summary span {
     font-size: 14px;
@@ -891,6 +892,13 @@ footer a, footer a:hover{
     margin-left: 15px;
 }
 
+.heading2{
+    font-size: 34px;
+    font-weight: 600;
+    font-family: "Poppins";
+    margin: 0 0 15px;
+}
+
 /*Scrollbar color*/
 
 @media (min-width:992px){
@@ -996,7 +1004,10 @@ footer a, footer a:hover{
     color: white;
     vertical-align: sub;
     padding-left: 0;
-}
+    }
+    .heading2{
+        font-size: 32px;
+    }
 }
 
 
@@ -1078,7 +1089,7 @@ footer{
       font-family: "poppins";
     color: #666666;
     font-size: 40px;
-    text-transform: uppercase;
+/*    text-transform: uppercase;*/
     font-weight: 600;
 }
 .ab-content {
@@ -1089,7 +1100,7 @@ footer{
 
 
 p {
-    font-family:"poppins",sans-serif;
+/*    font-family:"poppins",sans-serif;*/
     margin-top: 0;
 }
 .leaf1 {
@@ -1172,15 +1183,27 @@ p {
 
 .plan h3 {
     font-family: "Open Sans", sans-serif;
-    color: #0f9b49;
-    font-size: 40px;
+/*    color: #0f9b49;*/
+    font-size: 44px;
     margin-bottom: 0;
     font-weight: 600;
+    font-family: "Poppins";
+    display: flex;
+    align-items: flex-start;
+    line-height: 1;
+}
+
+.plan h3 span{
+    font-family: "Arial";
+    font-weight: 400;
+    font-size: 28px;
+    padding: 3px 0 0;
 }
 
 .plan p {
     margin-bottom: 0;
-    
+    text-align: center;
+    line-height: 1.3;
 }
 
 .plan-price h3 {
@@ -1229,6 +1252,10 @@ p {
     width: 100%;
     margin: 5px auto;
    
+}
+
+.plan-main.col-6{
+    padding: 0 8px !important;
 }
 
 .plan-main button span {
@@ -1293,26 +1320,28 @@ p {
 }
 
 .plan-price p {
-    font-weight: 600;
+    font-weight: 500;
    
 }
 
 .pg-1 {
-    font-size: 22px;
-    color: #333;
+/*    font-size: 22px;*/
+/*    color: #333;*/
 }
 
 .pg-2 {
+/*
     font-size: 14px;
     color: #333;
     font-weight: 600;
-    margin-bottom: 10px !important;
+*/
+/*    margin-bottom: 10px !important;*/
 }
 
 .plan-section {
     z-index: 5;
     position: relative;
-      background-color: #c3ead5;
+      background-color: #ebfcf2;
 
 }
 
@@ -1330,24 +1359,25 @@ p {
 .create-plan-button{
     background-color: #ef4444;
     color: white;
-    font-weight: 700;
+    font-weight: 600;
     border: none;
-     margin-right: 5px; 
     padding:10px 35px;
     font-family: "poppins";
-    /* width: 24%; */
     font-size: 21px;
-    margin-bottom: 0;
     border-radius: 30px;
     text-align: center;
+    display: block;
+    width: fit-content;
+    margin: 2rem auto 0;
 }
 
 .create-plan-button p {
     font-size: 13px;
     text-align: center;
     font-weight: 400;
-    margin-top: -8px;
+    margin-top: -5px;
     margin-bottom: 0;
+/*    line-height: 1;*/
 }
 
 .compare-button{
@@ -1369,11 +1399,11 @@ p {
       font-family: "poppins";
     color: #fff;
     text-transform: uppercase;
-    font-size: 40px;
+    font-size: 34px;
 }
 .why-sec-content{
     
-    font-size: 23px;
+    font-size: 20px;
     font-family: "poppins";
     color: #666666;
     font-weight: 400 !important;
@@ -1394,13 +1424,13 @@ p {
 
 .why-container-side-img{
     width: 100%;
-    height: 100%;
+/*    height: 100%;*/
  }
 
 
 .accord-sec h2 {
     font-family: "poppins";
-    color: #0f9b49;
+/*    color: #0f9b49;*/
     text-align: center;
     margin-bottom: 15px;
 }
@@ -1440,7 +1470,7 @@ p {
 font-weight: 600;
 }
 .click-here-btn{
-    background-color: orangered;
+    background-color: #ef4444;
     padding: 10px 25px;
     border-radius: 50px;
     text-align: center;
@@ -1452,7 +1482,7 @@ font-weight: 600;
 
 footer{
    background-color: white;
-   color: #292d31;
+/*   color: #292d31;*/
 }
 .copy-right-sec{
     margin-bottom: 0px;
@@ -1650,6 +1680,11 @@ text-align: center;
     }
 }
 
+#accordion .accordion-title {
+    font-family: "Open Sans";
+    font-weight: 500 !important;
+}
+
 .accord-inner{
     margin-bottom: 2px;
 }
@@ -1689,15 +1724,15 @@ text-align: center;
     padding-left: 5px;
 }
 .icon-599{
-    width:60px;
+    width:80px;
     padding-left: 5px;
 }
 .icon-799{
-    width: 85px;
+    width: 100px;
     padding-left: 5px;
 }
 .icon-999{
-    width: 85px;
+    width: 100px;
     padding-left: 5px;
 }
 
@@ -1707,13 +1742,24 @@ text-align: center;
     padding-left: 10px;
 }
 
+footer h3{
+    font-family: Poppins;
+    font-size: 24px;
+    margin: 0 0 12px;
+    color: #111;
+    font-weight: 500;
+}
+
+.banner2 .banner-padd{text-align: center;}
+
+
 @media (max-width:767px){
     .banner-section {
         min-height: 60vh;
         background-position: 80% 0;
     }
     .card-pd-style{
-        padding: 2px !important;
+        padding: 4px !important;
     }
     footer{
         margin:0
@@ -1725,19 +1771,19 @@ text-align: center;
         width: 167px;
     }
     .icon-399 {
-        width: 14px;
+        width: 40px;
         padding-left: 1px;
     }
     .icon-599 {
-        width: 28px;
+        width: 50px;
         padding-left: 3px;
     }
     .icon-799 {
-        width: 34px;
+        width: 60px;
         padding-left: 0px;
     }
     .icon-999 {
-        width: 34px;
+        width: 60px;
         padding-left: 0px;
     }
  .ab-freshoo h2{font-size: 32px;}
@@ -1839,7 +1885,7 @@ text-align: center;
     padding: 20px 30px;
 }
     footer{ margin:0; }
-    .compare-button{width: 31%;}
+/*    .compare-button{width: 31%;}*/
     .why-sec-content{font-size: 15px;}
     .desktop-image, .mobile-image {max-width: 173% !important;height: auto; }
     .footer-above-sec h2{font-size: 30px !important; }
@@ -1892,7 +1938,7 @@ text-align: center;
         font-size: 14px;
     }
     .compare-button{
-        width: 31%;
+/*        width: 31%;*/
     }
     .leaf1 {
         position: absolute !important;
@@ -1906,14 +1952,16 @@ text-align: center;
 @media (max-width:767px){
     .mobile-image {
         width: 100%;
-        margin-left: -20px;
+        margin-left: -25px;
     }
     .plan h3 {
-        font-family: "Open Sans", sans-serif;
-        color: #0f9b49;
-        font-size: 25px;
+/*        font-family: "Open Sans", sans-serif;*/
+/*        color: #0f9b49;*/
+/*        font-size: 25px;*/
+/*
         margin-bottom: 0;
         font-weight: 700;
+*/
     }
     .button-style-1{
         margin: auto;
@@ -1938,7 +1986,7 @@ text-align: center;
         font-weight: 400 !important;
     }
     .why-container-side-img{
-        display: none;
+/*        display: none;*/
     }
     .footer-above-cont {
         padding: 15px 0px;
@@ -1981,7 +2029,9 @@ text-align: center;
         margin-bottom:0px !important;
     }
     
-    
+    .create-plan-button{
+/*        width: 100%;*/
+    }
     
 }
 
@@ -2044,7 +2094,13 @@ text-align: center;
       
     }
     .plan h3 {
-        font-size: 24px;
+        font-size: 30px;
+    }
+    .plan h3 span{
+        font-size: 22px;
+    }
+    .plan p{
+        font-size: 14px;
     }
     .desktop-image {
         display: none;  /* Hide the desktop image on smaller screens */
@@ -2056,7 +2112,7 @@ text-align: center;
     .footer-above-sec h2{
         color: white;
         font-family: "Poppins";
-        font-size: 26px !important;
+        font-size: 24px !important;
         text-align: center;
         margin-top: 0;
         margin-bottom: 0;
@@ -2066,7 +2122,7 @@ text-align: center;
     .footer-above-sec h3{
         color: #ffdc61;
         font-family: "Poppins";
-        font-size: 25px !important;
+        font-size: 20px !important;
         text-align: center;
         margin-top: 0;
         margin-bottom: 0;
@@ -2074,7 +2130,6 @@ text-align: center;
     }
    
     .click-here-btn{
-        background-color: orangered;
         padding: 10px 25px;
         border-radius: 50px;
         text-align: center;
@@ -2084,8 +2139,7 @@ text-align: center;
         font-size: 20px;
     }
     .copy-right-sec{
-        margin-top: -10px;
-        padding: 0 40px;
+/*        padding: 0 40px;*/
     }
 }
 
@@ -2139,6 +2193,9 @@ text-align: center;
     align-items: center;
         padding-left: 0; /* Remove padding for small screens */
         text-align: center; /* Center content for small screens */
+        min-width: 180px;
+        margin-left: -30px;
+        margin-right: -20px;
     }
 }
 
@@ -2159,7 +2216,7 @@ text-align: center;
 .plan-section {
     z-index: 5;
     position: relative;
-    padding: 50px;  
+/*    padding: 50px;  */
 /*    margin: 30px 0;*/
 }
     
@@ -2192,19 +2249,21 @@ text-align: center;
     .plan-section {
         z-index: 5;
         position: relative;
-        padding: 30px 10px !important;
+/*        padding: 30px 10px !important;*/
 
     }
 
     .plan-section h2{
 /*       padding: 0 40px;*/
         text-align: center;
-        text-align: left;
+        text-align: left !important;
     }
     
     .plan-section .row{
+/*
             margin-right: 0px !important;
      margin-left: 0px !important;
+*/
     }
 
      .col-6{
@@ -2252,7 +2311,7 @@ text-align: center;
     }
     
     .plan-price p {
-        font-size: 10px;
+/*        font-size: 10px;*/
     }
     
     .pg-1 {
@@ -2264,7 +2323,15 @@ text-align: center;
     }
     
     .plan-main {
-        margin-bottom: 1rem;
+/*        margin-bottom: 1rem;*/
+    }
+    
+    .plan-text p{
+        line-height: 1.2;
+    }
+    
+    .plan-main.col-6{
+        padding: 0 5px 12px !important;
     }
     
     .leaf2 {
@@ -2273,12 +2340,13 @@ text-align: center;
 
     .create-plan-button{      
         color: white;
-        font-weight: 700;
+        font-weight: 500;
         border: none;
         /* margin-right: 6px; */
-        padding: 10px 10px;
+        padding: 10px;
         width: 100%;
-        font-size: 15px;
+        font-size: 18px;
+        margin: 1rem 0 0;
        
     }
     
@@ -2297,15 +2365,16 @@ text-align: center;
         color: white;
         font-weight: 700;
         border: none;        
-        padding: 10px 10px;
-        width: 80%;
-        font-size: 15px;
+        padding: 10px 5px;
+/*        width: 80%;*/
+        font-size: 12px;
+        line-height: 13px;
        
     }
     .create-plan-button p {
-        font-size: 10px;
+/*        font-size: 10px;*/
         font-weight: 400;
-        margin-top: -3px;
+/*        margin-top: -3px;*/
         margin-bottom: 0;
        
     }
@@ -2428,35 +2497,62 @@ text-align: center;
     padding-left:0;
 /*    font-family: open-sans;*/
 }
-.about-cont-1{background-color: #fff;display: flex; justify-content: center;}
-.about-icon{padding: 15px;display: flex;align-items: center;}
-.about-icon p{margin: 5px;}
+.about-cont-1{background-color: #fff;display: flex; justify-content: center; text-align: center; grid-column-gap: 15px;}
+.about-icon{display: flex;align-items: center; width: 33.33%; grid-column-gap: 10px;}
+.about-icon p{margin: 5px; font-family: "Poppins"; font-weight: 500; text-align: left;}
+.about-icon img{
+    max-width: 50%;
+    width: 60px;
+    margin: 0 0 5px;
+}
 /*.about-icon img{width: 100px;}*/
-.footer-sec-1{padding-top:30px;}
-.footer-sec .row{align-items: baseline;}
+/*.footer-sec-1{padding-top:30px;}*/
+/*.footer-sec .row{align-items: baseline;}*/
+footer{
+    padding: 2.5rem 0 0;
+}
 .plan-heading-1 { display: flex;justify-content: space-between;}
 .plan-section h2{text-align: center;}
-.plan-section .compare-button{border:2px solid #a3a0a0; border-radius: 10px; color: #666 !important;}
-.footer-bootom{border-top:1px solid #666; padding: 10px 0}
-.owner-name{ float: right;}
+.plan-section .compare-button{border:2px solid #a3a0a0; border-radius: 10px; color: #666 !important; display: block; width: fit-content; margin-left: auto; max-width: 100%; text-transform: uppercase; font-weight: 600; text-align: center;}
+.footer-bootom{border-top:2px solid #ddd; padding: 15px 0;}
+.owner-name{ float: right; margin: 0;}
 .icon-exp{justify-content: center; width:30%;}
+.icon-exp img{
+    width: 45px;
+    margin: 0 0 12px;
+}
+
+.icon-exp p{
+    margin: 0 0 20px;
+    font-family: "Poppins";
+    color: #fff;
+    font-size: 20px;
+    line-height: 1.2;
+}
 .icon-content-1{display: flex;text-align: center;
     flex-wrap: wrap;  
+/*
     align-content: center;
-    align-items: center;justify-content: space-evenly;
+    align-items: center;
+*/
+    justify-content: space-evenly;
 }
 .container-side-img{width:700px;max-width: 100%;float: right;}
-.exper-content{padding: 30px 50px;}
-.exper-content h2{text-align: center;color: #fff;}
+.exper-content{padding: 30px 40px;}
+.exper-content h2{text-align: center;color: #fff; text-transform: none;}
 .about-content{margin: 2rem 0;}
 .btn-cls{text-align: center}
 .banner-btn button{padding: 10px 40px; border-radius:50px;}
 .plan-text {
     text-align: center;
-    background-color: #f9f9f9;
-    padding: 1rem 1rem 0.5rem;
+    background-color: #f4f4f4;
+    padding: 6px 10px;
 }
-.plan-pic{display: flex;justify-content: center; padding: 10px;}
+.plan-text p{
+    font-weight: 500;
+    text-align: center;
+}
+.plan-pic{display: flex;justify-content: space-between; padding: 15px 10px 12px;}
 .plan-price{padding: 10px;}
   .text-dark {
     color: #343a40!important;
@@ -2467,44 +2563,83 @@ text-align: center;
 .banner-3 .banner-padd h3{color: #28a745; font-size: 40px;font-weight: 600;}
 .banner-3 .banner-padd h2{color:#ef4444; font-size:50px; font-weight: 600;}
 .banner-3 .banner-padd h1{color: #ef4444; font-size:65px;font-weight: 700;  }
-.heading{margin: 10px 0; align-items: center;}
+.heading{margin: 10px 0;}
+.plan-section {
+    padding: 3rem 0;
+}
+.plan-section .row{
+    max-width: 1200px;
+    margin: auto;
+}
 
-
+footer .col-6{
+    padding-right: 15px !important;
+    padding-left: 15px !important;
+}
 
 @media(max-width:768px){
-    footer{padding: 10px;}
+    footer{padding: 2rem 0 0;}
     .veg1{width:250px;left: -35px;top:35%;}
     .banner-padd h1{display: none;}
     .plan-heading-1{display: block;}
     .about-icon{width: 100%;}
-    .plan-section h2{font-size: 27px;}
+    .plan-section h2{font-size: 24px;}
     .about-cont-1 {
-    flex-wrap: wrap;
+/*    flex-wrap: wrap;*/
     display: flex;
+        column-gap: 10px;
 }
+    .about-icon p{
+        text-align: center;
+    }
     .about-icon {
     width: 33.33%;display: block;
+        padding: 0;
 }
     .plan-section .row{
             display: flex;
-    align-items: center;
+/*    align-items: center;*/
     }
     .exper-content{
-    background-image: url("../images/exper-fresh.jpg");
+/*    background-image: url("../images/exper-fresh.jpg");*/
+        background: linear-gradient(0deg, rgba(0,0,0, 0.35), rgba(0,0,0, 0.6)), url(../images/exper-fresh.jpg) no-repeat;
     background-repeat: no-repeat;
     background-position:right;
     background-size: cover;
+        padding: 2.5rem 15px;
     }
-.icon-exp {
-    display: flex;
-    width: 100%;
-    justify-content: flex-start;
-    margin: 5px 0;align-items: center;
-}
-    .icon-exp p{color: #fff;}
+    .exper-content h2{
+        text-align: left;
+        
+    }
+    .icon-exp {
+        display: flex;
+        width: 100%;
+        justify-content: flex-start;
+        margin: 5px 0;
+        align-items: center;
+        grid-column-gap: 12px;
+    }
+    .icon-exp p{color: #fff; margin: 0; font-family: Poppins !important; text-align: left; line-height: 1.3; font-size: 18px;}
+    .icon-exp img{
+/*        width: 45px;*/
+        margin: 0;
+    }
     .fresh-bg .container-side-img{display: none;}
-    .exper-content{padding: 20px}
     .banner-2 .banner-padd, .banner-3 .banner-padd{display: none;}
+    .plan-section{
+        padding: 2.5rem 0 !important;
+    }
+    .mbp{
+        padding: 0 10px;
+    }
+    .plan-text{
+        padding: 10px;
+    }
+    .padding{
+        padding-top: 2.5rem;
+        padding-bottom: 2.5rem;
+    }
 }
 
 
@@ -2595,7 +2730,7 @@ text-align: center;
 }
 .wrap{width: 100%;}
 
-.banner2 .banner-padd{text-align: center;} 
+
 
 
 

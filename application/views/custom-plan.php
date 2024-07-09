@@ -13,20 +13,99 @@
             color: #0f9b49 !important;
             opacity: 1 !important;
         }
+        
+        .plan-btn {
+    border-radius: 20px;
+    background-color: #109B4A;
+    color: #fff !important;
+    padding: 8px 22px;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0.01em;
+    text-align: center;
+}
+        a {
+    text-decoration: none !important;
+}
+        ol{text-align: left;}
+       .sub-list li{list-style: auto !important;}
+        .sub-list li:before{display: none;}
+        .myulcheck {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0px;
+    display: inline-block;
+    padding-right: 5px;
+    padding-left: 20px;
+    vertical-align: top;
+            text-align: left;
+}
+        .myulcheck li {
+    position: relative;
+    list-style: none;
+    padding: 5px 10px;
+    color: #666;
+    font-size: 16px;
+    line-height: 26px;
+}
+        .myulcheck li:before {
+    content: '';
+    width: 14px;
+    height: 6px;
+    position: absolute;
+    top: 13px;
+    left: -20px;
+    border: 2px solid #109b4a;
+    border-top: none;
+    border-right: none;
+    background: transparent;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+        .work-plan{text-align: left;}
+        
+        @media(max-width:768px){
+            .plan-btn{font-size:16px; }
+            .plan-padd{padding: 5px;}}
     </style>
 
     <body>
         <div>
         <?php //include 'include/menu-sec.php' ?>
         </div>
-      
+        <section class="plan-1 mt-4">
+           <div class="container">
+               <div class="row">
+                       <div class="col-12 text-center pb-3 pt-3 plan-btns-1">
+                         <a href="" class="plan-btn">399</a>
+                         <a href="" class="plan-btn">₹599</a>
+                         <a href="" class="plan-btn">₹799</a>
+                         <a href="" class="plan-btn">₹999</a>                         
+                      </div>
+               </div>
         <section class="custom-plan">
             <div class="container">
                 <div class="row">
-                   <h2 class="text-center">Custom <span>Plan</span></h2>
-                   <div class="text-center">
-                       
-                        <p>Make Your Own Plan Minimum value should be ₹1200 per week</p>
+                   <h2 class="text-center">Tailored to Your <span>Preferences</span></h2>
+                   <div class="text-center">                       
+                        <p>At 5am Fresh, we understand that every family has unique dietary preferences and needs. Our Custom Plan allows you to personalize your vegetable deliveries based on the varieties and quantities that best suit your lifestyle.</p>
+                    </div>
+                    <div  class="work-plan">
+                    <h3 class="text-center"> How It Works</h3>
+                        <ul class="myulcheck">
+                        <li><strong>Minimum Order Value:</strong> ₹1000 per week</li>
+                        <li><strong>Customize Your Plan:</strong>
+                            <ol class="sub-list">
+                                <li>Select Varieties: Choose the number of vegetable varieties you want from each category. </li>
+                                <li>Choose Quantities: Specify the weight you need for each selected category.</li>
+                            </ol>
+                            
+                        </li>
+                        <li><strong>Pricing:</strong> The total price of your custom plan will be calculated based on the selected varieties and quantities.</li>
+                        </ul>
+                        
                     </div>
                     <div class="col-12">
                       <div class="essential-veg">
@@ -53,7 +132,7 @@
                                 <i class="fas fa-check-square square-icon-style" style="margin-left: 10px;" id="colorChangeIcon"></i>
                           </div>
                            </li>
-                           </li>
+                           
                            <li class="list-group-item">
                             <div class="d-flex">                        
                                 <div>
@@ -62,7 +141,7 @@
                                             type="text"
                                             class="form-control zero-btn-style-2 margin-right-style"
                                             placeholder="Kg"
-                                            oninput="this.value = this.value.replace(/[^0-9]/g, '').slice(0, 3); this.style.borderColor = ''"
+                                            oninput="this.value = this.value.replace(/[^0-9]/g, '').slice(0, 2); this.style.borderColor = ''"
                                             maxlength="3" 
                                             id="kgInput"                                         
                                         />
@@ -89,7 +168,7 @@
                                 <i class="fas fa-check-square square-icon-style"  id="colorChangeIcon"></i>
                           </div>
                            </li>
-                           </li>
+                          
                            <li class="list-group-item">
                             <div class="d-flex">                        
                                 <div>
@@ -99,7 +178,7 @@
                                             type="text"
                                             class="form-control zero-btn-style-2 margin-right-style"
                                             placeholder="Kg"
-                                            oninput="this.value = this.value.replace(/[^0-9]/g, '').slice(0, 3); this.style.borderColor = ''"
+                                            oninput="this.value = this.value.replace(/[^0-9]/g, '').slice(0, 2); this.style.borderColor = ''"
                                             maxlength="3"
                                         />
                                     </div>
@@ -118,14 +197,14 @@
                          </li>
                        </ul>
                        <ul class="list-group list-group-horizontal item" data-item="potatoes">
-                          <li class="list-group-item"><img src="<?= base_url('assets/images/potatoes.jpg')?>"/></li>
+                          <li class="list-group-item"><img src="<?= base_url('assets/images/Potatoes.jpg')?>"/></li>
                           <li class="list-group-item">Potatoes</li>
                           <li class="list-group-item">
                           <div class="icon-text" id="iconText3">
                                 <i class="fas fa-check-square square-icon-style" style="margin-left: 10px;" id="colorChangeIcon"></i>
                           </div>
                            </li>
-                           </li>
+                           
                            <li class="list-group-item">
                             <div class="d-flex">                        
                                 <div>
@@ -134,7 +213,7 @@
                                                 type="text"
                                                 class="form-control zero-btn-style-2 margin-right-style"
                                                 placeholder="Kg"
-                                                oninput="this.value = this.value.replace(/[^0-9]/g, '').slice(0, 3); this.style.borderColor = ''"
+                                                oninput="this.value = this.value.replace(/[^0-9]/g, '').slice(0, 2); this.style.borderColor = ''"
                                                 maxlength="3"
                                             />
 
@@ -160,7 +239,7 @@
                                 <i class="fas fa-check-square square-icon-style" id="colorChangeIcon"></i>
                           </div>
                            </li>
-                           </li>
+                          
                            <li class="list-group-item">
                             <div class="d-flex">                        
                                 <div>
@@ -169,7 +248,7 @@
                                             type="text"
                                             class="form-control zero-btn-style-2 margin-right-style"
                                             placeholder="Kg"
-                                            oninput="this.value = this.value.replace(/[^0-9]/g, '').slice(0, 3); this.style.borderColor = ''"
+                                            oninput="this.value = this.value.replace(/[^0-9]/g, '').slice(0, 2); this.style.borderColor = ''"
                                             maxlength="3"
                                         />
                                     </div>
@@ -194,7 +273,7 @@
                                 <i class="fas fa-check-square square-icon-style" style="margin-left: 10px;" id="colorChangeIcon"></i>
                           </div>
                            </li>
-                           </li>
+                          
                            <li class="list-group-item">
                             <div class="d-flex">                        
                                 <div>
@@ -203,7 +282,7 @@
                                             type="text"
                                             class="form-control zero-btn-style-2 margin-right-style"
                                             placeholder="Kg"
-                                            oninput="this.value = this.value.replace(/[^0-9]/g, '').slice(0, 3); this.style.borderColor = ''"
+                                            oninput="this.value = this.value.replace(/[^0-9]/g, '').slice(0, 2); this.style.borderColor = ''"
                                             maxlength="3"
                                         />
                                     </div>
@@ -228,7 +307,7 @@
                                 <i class="fas fa-check-square square-icon-style" id="colorChangeIcon"></i>
                           </div>
                            </li>
-                           </li>
+                          
                            <li class="list-group-item">
                             <div class="d-flex">                        
                                 <div>
@@ -237,7 +316,7 @@
                                             type="text"
                                             class="form-control zero-btn-style-2 margin-right-style"
                                             placeholder="Kg"
-                                            oninput="this.value = this.value.replace(/[^0-9]/g, '').slice(0, 3); this.style.borderColor = ''"
+                                            oninput="this.value = this.value.replace(/[^0-9]/g, '').slice(0, 2); this.style.borderColor = ''"
                                             maxlength="3"
                                         />
                                     </div>
@@ -262,7 +341,7 @@
                                 <i class="fas fa-check-square square-icon-style" style="margin-left: 10px;" id="colorChangeIcon"></i>
                           </div>
                            </li>
-                           </li>
+                       
                            <li class="list-group-item">
                             <div class="d-flex">                        
                                 <div>
@@ -271,7 +350,7 @@
                                             type="text"
                                             class="form-control zero-btn-style-2 margin-right-style"
                                             placeholder="Kg"
-                                            oninput="this.value = this.value.replace(/[^0-9]/g, '').slice(0, 3); this.style.borderColor = ''"
+                                            oninput="this.value = this.value.replace(/[^0-9]/g, '').slice(0, 2); this.style.borderColor = ''"
                                             maxlength="3"
                                         />
                                     </div>
@@ -304,7 +383,7 @@
                                             type="text"
                                             class="form-control zero-btn-style-2 margin-right-style"
                                             placeholder="Kg"
-                                            oninput="this.value = this.value.replace(/[^0-9]/g, '').slice(0, 3); this.style.borderColor = ''"
+                                            oninput="this.value = this.value.replace(/[^0-9]/g, '').slice(0, 2); this.style.borderColor = ''"
                                             maxlength="3"
                                         />
                                     </div>

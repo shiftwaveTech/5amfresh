@@ -1,9 +1,12 @@
 body{ font-family:'open sans'; }
-h3, h3, h4 {font-family: "Costa Ptf Demi"; color: #666666; font-weight:bold;margin-bottom: 0;}
+h3, h3, h4 {
+/*    font-family: "Costa Ptf Demi"; */
+    font-family: "Poppins";
+    color: #666666; font-weight: 600;margin-bottom: 0;}
 
 span{color: #0f9b49;}
 .plan-1{padding: 1rem 0;}
-.plan-price-1{float: right;}
+.plan-price-1{float: right; padding-right: 8px;}
 .btn-kgs {
     padding: 10px 27px;
     background-color: #0f9b49;
@@ -23,9 +26,9 @@ span{color: #0f9b49;}
 .create-plan-button{
     background-color: #FD632F;
     font-size: 21px;
-    padding: 5px 20px 12px 20px;
+    padding: 10px 50px;
    
-    border-radius:30px 0px 0px 30px !important;
+    border-radius:30px !important;
   
 }
 .compare-button{
@@ -76,13 +79,14 @@ h3{
 
 .new-compare{
     border: none;
-    border-radius: 0px 30px 30px 0px;
+/*    border-radius: 0px 30px 30px 0px;*/
     color: white;
     background-color: #005e1a;
     font-size: 22px;
     font-family: "Costa Ptf Demi";
     font-weight: 700;
     padding: 6px 20px;
+    border-radius: 30px;
 }
 
 
@@ -93,7 +97,7 @@ h3{
     .create-plan-button{
         background-color: #FD632F;
         font-size: 16px !important;
-        border-radius:30px 0px 0px 30px !important;
+        border-radius:30px !important;
     }
     .create-plan-button p{
         font-size:12px;
@@ -107,6 +111,7 @@ h3{
     }
     .btn-kgs {
         margin-bottom:10px;
+        padding: 4px 10px !important;
     }
     .plus-button-style{
         margin-top:15px;
@@ -138,9 +143,9 @@ h3{
         font-size:8px !important;
     }
     .card-img-bottom {
-        width: 90%;
+        width: 75%;
+        margin-bottom: 4px;
     }
-    
 }
 
 
@@ -224,4 +229,28 @@ text-align: center;
 a{
    text-decoration: none !important;   
 }
+.button-style-1 {
+    margin: 30px auto;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+.why-freshoo h2 span {
+    color: #0f9b49;
+font-weight: 600;
+}
+.create-plan-button{margin: 0;}
+
+@media(max-width:768px){
+    .plan-btn{font-size: 13px;}
+    .plan-padd{padding: 5px;}
+    .why-freshoo h2 span{font-size:35px;}
+    
+    .button-style-1{
+        margin: 15px auto;
+    }
+}
+
 

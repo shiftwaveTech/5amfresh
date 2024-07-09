@@ -16,19 +16,18 @@
            <div class="container">
                <div class="row">
                   
-                   <div class="col-md-3 text-center custom-plan">
-                       <h3><span>Plan 399 </span></h3>
-                       <p>Recommended for 2 adults</p>
+                   <div class="col-md-3 col-6 order-2 order-md-1 text-center custom-plan">
+                     <img src="../assets/images/icon-399.png"  style="width:50px;"> 
                    </div>
                    
-                       <div class=" col-md-6 text-center pb-3 pt-3">
+                       <div class=" col-md-6 col-12 order-1 order-md-2 text-center pb-3 pt-3 plan-btns-1">
                          <a href="" class="plan-btn">₹599</a>
                          <a href="" class="plan-btn">₹799</a>
                          <a href="" class="plan-btn">₹999</a>
                          <a href="" class="plan-btn">Custom</a>
                       </div>
                    
-                   <div class="col-md-3 text-center plans">
+                   <div class="col-md-3 col-6 order-3 text-center plans">
                        <div class="plan-price-1 custom-plan ">
                         <h3><span> ₹ 399 </span> </h3>
                        <p>Per Week, Billed Monthly</p>
@@ -41,7 +40,7 @@
       
            </div>
        </section> 
-       
+       <div class="container">
         <div class="d-flex align-items-center justify-content-center text-center pt-4">
                     <div class="custom-plan">
                         <h2>15 Varieties of	<span>Vegetables</span></h2>
@@ -49,7 +48,7 @@
                         <p>Experience the freshest and highest quality vegetables with our Plan 399. Perfectly designed for a family of 2+1 or more, this plan includes a diverse selection of 15 varieties of vegetables with a total approximate weight of 7 kgs. Enjoy the convenience of having fresh vegetables delivered to your doorstep every week.</p>
                     </div>
                 </div> 
-
+</div>
        <!-- subscribe-page-select-plan-1 -->
        <div class="margins-of-sec-1">
             <div class="container button-style-1 subscribe">
@@ -58,14 +57,16 @@
                    SUBSCRIBE NOW<p> and get one week free</p>
                 </button>
             </a>
+<!--
             <a href="<?php echo base_url('') ?>#plan_calling" class="text-white text-decoration-none"> 
                 <button class="compare-button">
                    Check <span>Other Plans</span>
                 </button>
             </a>
+-->
             </div>
         </div>
-     <section>
+     <section class="plan-padd">
          <div class="container mt-4">
             
             <div class="d-flex align-items-center justify-content-center text-center">
@@ -173,7 +174,7 @@
            
          </div>
      </section>
-     <section>
+     <section  class="plan-padd">
                 <div class="container mt-3">
                     <div class="d-flex align-items-center justify-content-center text-center">
                         <div class="custom-plan">
@@ -274,7 +275,7 @@
             </div>
                 </div>
         </section>
-       <section>
+       <section  class="plan-padd">
             <div class="container mt-3">
                 
                 <div class="d-flex align-items-center justify-content-center text-center">
@@ -331,7 +332,7 @@
             </div>
             </div>
         </section>  
-        <section>
+        <section  class="plan-padd">
             <div class="container mt-3">
                 <div class="d-flex align-items-center justify-content-center text-center">
                     <div class="custom-plan">
@@ -393,7 +394,7 @@
             </div>
         </section>   
         
-        <section>
+        <section  class="plan-padd">
             <div class="container mt-3">
                     <div class="d-flex align-items-center justify-content-center text-center">
                         <div class="custom-plan">
@@ -450,7 +451,7 @@
             </div>        
             </div>
         </section> 
-        <section>
+        <section  class="plan-padd">
             <div class="container mt-3">
                 <div class="d-flex align-items-center justify-content-center text-center">
                     <div class="custom-plan">
@@ -608,6 +609,7 @@
 
        <!-- accordions  -->
 
+<!--
             <div class="accord-sec">
                 <div class="container">
             
@@ -678,6 +680,7 @@
                 
                 </div>
             </div>
+-->
 
             <div>
               <div class="col-12 text-center">
@@ -687,7 +690,7 @@
 
                 <div class="container button-style-1 mt-4 mb-4">
                     <a id="create-custom-plan" style="cursor:pointer;"  class="create-plan-button text-white text-decoration-none">  Create Your Own Plan<p> Minimum Value ₹1000 per Week</p></a>                   
-                    <a  class="new-compare text-center padding-top-compare text-white text-decoration-none"> Compare Plans</a>
+<!--                    <a  class="new-compare text-center padding-top-compare text-white text-decoration-none"> Compare Plans</a>-->
                     
                 </div>
             </div>
@@ -695,7 +698,7 @@
 
 
         <!-- footer above section  -->
-        <div class="footer-above-sec">
+             <div class="footer-above-sec" id="contact_calling">
             <div class="mb-2">
                 <div class="container">
                     <div class="d-flex flex-row">  
@@ -707,6 +710,30 @@
                         <div class="footer-above-cont">              
                             <div class="d-flex flex-column align-items-center justify-content-center">
                                 <!-- Text content -->
+                                <h2>Sign Up Now</h2> 
+                                <h3>Get One Week</h3> 
+                                <h1>FREE</h1>   
+                                <button class="click-here-btn">Click Here</button>   
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+<!--
+        <div class="footer-above-sec">
+            <div class="mb-2">
+                <div class="container">
+                    <div class="d-flex flex-row">  
+                        <div>                                       
+
+                            <img src="<?= base_url('assets/images/footer2.png')?>" alt="Desktop Image" class="desktop-image pt-4">
+                            <img src="<?= base_url('assets/images/footer-phn.png')?>" alt="Mobile Image" class="mobile-image">                             
+                        </div>  
+                        <div class="footer-above-cont">              
+                            <div class="d-flex flex-column align-items-center justify-content-center">
+                            
                                 <h2>Subscribe Now </h2> 
                                 <h3>Get One Week</h3> 
                                 <h1>FREE</h1>   
@@ -717,6 +744,7 @@
                 </div>
             </div>
         </div>  
+-->
         <?php //include 'include/footer-main.php' ?>
         
     </body>

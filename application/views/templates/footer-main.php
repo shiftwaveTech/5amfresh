@@ -11,7 +11,7 @@
                     <div class="row">
                         <div class="col-md-3 col-12">
                             <div class="footer-sec-1"> 
-                               <img src="./assets/images/logo-2.png" >
+                               <img src="./assets/images/logo.png" style="width:200px;">
                            
                           
                             </div>    
@@ -23,10 +23,10 @@
                                 <li><a href="#">My Account</a></li>
                                 <li><a href="#">Contact us</a></li>
                                 <li><a href="<?= base_url('welcome/faqs') ?>">FAQ’s</a></li>
-                                <li><a href="/application/views/shipping.php">Shipping & Delivery</a></li>
-                                <li><a href="/application/views/terms.php">Terms</a></li>
-                                <li><a href="/application/views/privacy-policy.php"> Privacy Policy</a></li>
-                                <li><a href="/application/views/refund-policy.php">Refund Policy</a></li>
+                                <li><a href="<?= base_url('welcome/shipping') ?>">Shipping & Delivery</a></li>
+                                <li><a href="<?= base_url('welcome/terms') ?>">Terms</a></li>
+                                <li><a href="<?= base_url('welcome/privacy_policy<') ?>"> Privacy Policy</a></li>
+                                <li><a href="<?= base_url('welcome/refund_policy') ?>">Refund Policy</a></li>
                                 <li><a href="">Blog</a></li> 
                             </ul>                          
                             </div>

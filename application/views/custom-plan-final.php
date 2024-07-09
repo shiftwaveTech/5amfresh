@@ -17,9 +17,6 @@
     font-weight: 700;
     padding: 6px 20px;
 }
-
-
-
 .compare-button {
     background-color: #109B4A;
     font-family: "Costa Ptf Demi";
@@ -36,8 +33,6 @@
     display: block;
     margin-top: -6px;
 }
-
-
 @media only screen and (device-width: 412px){
     .btn-next{
         padding: 0.75rem 128px !important;
@@ -58,7 +53,6 @@
         padding: 0.75rem 128px !important;
     }
 }
-
 @media (max-width: 767px){
 .create-plan-button {
     padding: 10px 18px;
@@ -81,12 +75,8 @@
     margin-top:-6px;
 }
 }
-
-
     </style>
-       
     </head>
-   
     <body>
     <div>
 <?php include 'include/menu-sec.php' ?>
@@ -104,25 +94,18 @@
                        <p>Per Week, Billed Monthly</p>
                        </div>
                    </div>
-                  
                </div>
-
-      
            </div>
        </section> 
        <div class="margins-of-sec-1">
-                <div class="container button-style-1 mb-4">
-                   
-                <a href="index.php" class="btn-next text-white text-decoration-none">
-                             
-                                PAY NOW
-                             
+                <div class="container button-style-1 mb-4">                   
+                <a href="index.php" class="btn-next text-white text-decoration-none">                             
+                                PAY NOW                             
                 </a>
                 </div>
             </div>
      <section>
-         <div class="container mt-4">
-            
+         <div class="container mt-4">           
             <div class="d-flex align-items-center justify-content-center text-center">
                     <div class="custom-plan">
                         <h2>Must Have <span>Vegetables</span></h2>
@@ -139,7 +122,6 @@
                             <button type="button" class="btn-kgs">2kgs</button>
                         </div>
                     </div>
-
                     <div class="col-3 col-md-3 card-pd-style">
                         <div class="card border-0 shadow bg-white border-radius-style">
                             <div class="padding-tex">
@@ -149,7 +131,6 @@
                             <button type="button" class="btn-kgs">1kgs</button>
                         </div>
                     </div>
-
                     <div class="col-3 col-md-3 card-pd-style">
                         <div class="card border-0 shadow bg-white border-radius-style">
                             <div class="padding-tex">
@@ -159,7 +140,6 @@
                             <button type="button" class="btn-kgs">1/2kgs</button>
                         </div>
                     </div>
-
                     <div class="col-3 col-md-3 card-pd-style">
                         <div class="card border-0 shadow bg-white border-radius-style">
                             <div class="padding-tex">
@@ -169,9 +149,7 @@
                             <button type="button" class="btn-kgs">100gms</button>
                         </div>
                     </div>
-
                     <!-- Repeat the above card structure for the remaining cards -->
-
             </div>   
             <div class="row mt-4">
                     <div class="col-3 col-md-3 card-pd-style">
@@ -183,7 +161,6 @@
                             <button type="button" class="btn-kgs">100gms</button>
                         </div>
                     </div>
-
                     <div class="col-3 col-md-3 card-pd-style">
                         <div class="card border-0 shadow bg-white border-radius-style">
                             <div class="padding-tex">
@@ -193,7 +170,6 @@
                             <button type="button" class="btn-kgs">50gms</button>
                         </div>
                     </div>
-
                     <div class="col-3 col-md-3 card-pd-style">
                         <div class="card border-0 shadow bg-white border-radius-style">
                             <div class="padding-tex">
@@ -203,7 +179,6 @@
                             <button type="button" class="btn-kgs">100gms</button>
                         </div>
                     </div>
-
                     <div class="col-3 col-md-3 card-pd-style">
                         <div class="card border-0 shadow bg-white border-radius-style">
                             <div class="padding-tex">
@@ -213,18 +188,13 @@
                             <button type="button" class="btn-kgs">100gms</button>
                         </div>
                     </div>
-
                     <!-- Repeat the above card structure for the remaining cards -->
-
-            </div>   
-            
+            </div>               
             <div class="container button-style-1">
                 <button class="plus-button-style rounded-circle border-0 shadow-lg bg-white">
                     <i class="fa-solid fa-plus plus-icon-style"></i>
-                </button>
-               
+                </button>               
             </div>
-           
          </div>
      </section>
      <section>
@@ -234,12 +204,8 @@
                             <h2>Other <span>Vegetables</span></h2>
                             <h5>(Three Included - 250 gms Each)</h5>
                         </div>
-                    </div>
-
-                    
+                    </div>    
                     <div class="row mt-2 mb-4">
-
-                    
                         <div class="col-3 col-md-3 card-pd-style">
                             <div class="card border-0 shadow-lg bg-white border-radius-style">
                                 <div class="padding-tex">
@@ -248,7 +214,6 @@
                                 <img src="<?= base_url('assets/images/Cabbage.png')?>" class="card-img-bottom" alt="Image 1">
                             </div>
                         </div>
-
                         <div class="col-3 col-md-3 card-pd-style">
                             <div class="card border-0 shadow bg-white border-radius-style">
                                 <div class="padding-tex">
@@ -257,7 +222,6 @@
                                 <img src="<?= base_url('assets/images/Cauliflower.png')?>" class="card-img-bottom" alt="Image 2">
                             </div>
                         </div>
-
                         <div class="col-3 col-md-3 card-pd-style">
                             <div class="card border-0 shadow bg-white border-radius-style">
                                 <div class="padding-tex">
@@ -266,7 +230,6 @@
                                 <img src="<?= base_url('assets/images/Brinjal.png')?>" class="card-img-bottom" alt="Image 2">
                             </div>
                         </div>
-
                         <div class="col-3 col-md-3 card-pd-style">
                             <div class="card border-0 shadow bg-white border-radius-style">
                                 <div class="padding-tex">
@@ -275,9 +238,7 @@
                                 <img src="<?= base_url('assets/images/Black Eggplant.png')?>" class="card-img-bottom" alt="Image 2">
                             </div>
                         </div>
-
                         <!-- Repeat the above card structure for the remaining cards -->
-
                     </div>
                     <div class="row mt-2">
                         <div class="col-3 col-md-3 card-pd-style">
@@ -288,7 +249,6 @@
                                 <img src="<?= base_url('assets/images/Raw Banana.png')?>" class="card-img-bottom" alt="Image 1">
                             </div>
                         </div>
-
                         <div class="col-3 col-md-3 card-pd-style">
                             <div class="card border-0 shadow bg-white border-radius-style">
                                 <div class="padding-tex">
@@ -297,7 +257,6 @@
                                 <img src="<?= base_url('assets/images/Okra.png')?>" class="card-img-bottom" alt="Image 2">
                             </div>
                         </div>
-
                         <div class="col-3 col-md-3 card-pd-style">
                             <div class="card border-0 shadow bg-white border-radius-style">
                                 <div class="padding-tex">
@@ -306,7 +265,6 @@
                                 <img src="<?= base_url('assets/images/Ivy Gourd.png')?>" class="card-img-bottom" alt="Image 2">
                             </div>
                         </div>
-
                         <div class="col-3 col-md-3 card-pd-style">
                             <div class="card border-0 shadow bg-white border-radius-style">
                                 <div class="padding-tex">
@@ -315,15 +273,12 @@
                                 <img src="<?= base_url('assets/images/Drumstick.png')?>" class="card-img-bottom" alt="Image 2">
                             </div>
                         </div>
-
                         <!-- Repeat the above card structure for the remaining cards -->
-
                     </div>
                     <div class="container button-style-1">
                 <button class="plus-button-style rounded-circle border-0 shadow-lg bg-white">
                     <i class="fa-solid fa-plus plus-icon-style"></i>
-                </button>
-               
+                </button>               
             </div>
                 </div>
         </section>
@@ -374,12 +329,12 @@
                     </div>
 
                 <!-- Repeat the above card structure for the remaining cards -->
+                
                 </div>
                 <div class="container button-style-1">
                 <button class="plus-button-style rounded-circle border-0 shadow-lg bg-white">
                     <i class="fa-solid fa-plus plus-icon-style"></i>
                 </button>
-               
             </div>
             </div>
         </section>  
@@ -391,8 +346,6 @@
                         <h5>(One Included - 250gms)</h5>
                     </div>
                 </div>
-
-            
                 <div class="row mt-2">
                     <div class="col-3 col-md-3 card-pd-style">
                         <div class="card border-0 shadow-lg bg-white border-radius-style">
@@ -402,7 +355,6 @@
                             <img src="<?= base_url('assets/images/carrot.png')?>" class="card-img-bottom" alt="Image 1">
                         </div>
                     </div>
-
                     <div class="col-3 col-md-3 card-pd-style">
                         <div class="card border-0 shadow bg-white border-radius-style">
                             <div class="padding-tex">
@@ -411,7 +363,6 @@
                             <img src="<?= base_url('assets/images/potato.png')?>" class="card-img-bottom" alt="Image 2">
                         </div>
                     </div>
-
                     <div class="col-3 col-md-3 card-pd-style">
                         <div class="card border-0 shadow bg-white border-radius-style">
                             <div class="padding-tex">
@@ -420,7 +371,6 @@
                             <img src="<?= base_url('assets/images/radish.png')?>" class="card-img-bottom" alt="Image 2">
                         </div>
                     </div>
-
                     <div class="col-3 col-md-3 card-pd-style">
                         <div class="card border-0 shadow bg-white border-radius-style">
                             <div class="padding-tex">
@@ -429,21 +379,15 @@
                             <img src="<?= base_url('assets/images/beetroot.png')?>" class="card-img-bottom" alt="Image 2">
                         </div>
                     </div>
-
                     <!-- Repeat the above card structure for the remaining cards -->
-
                 </div>
-
                 <div class="container button-style-1">
                 <button class="plus-button-style rounded-circle border-0 shadow-lg bg-white">
                     <i class="fa-solid fa-plus plus-icon-style"></i>
-                </button>
-               
+                </button>       
             </div>
-            
             </div>
         </section>   
-        
         <section>
             <div class="container mt-3">
                     <div class="d-flex align-items-center justify-content-center text-center">
@@ -461,7 +405,6 @@
                                 <img src="<?= base_url('assets/images/bitter.png')?>" class="card-img-bottom" alt="Image 1">
                             </div>
                         </div>
-
                         <div class="col-3 col-md-3 card-pd-style">
                             <div class="card border-0 shadow bg-white border-radius-style">
                                 <div class="padding-tex">
@@ -470,7 +413,6 @@
                                 <img src="<?= base_url('assets/images/bottle.png')?>" class="card-img-bottom" alt="Image 2">
                             </div>
                         </div>
-
                         <div class="col-3 col-md-3 card-pd-style">
                             <div class="card border-0 shadow bg-white border-radius-style">
                                 <div class="padding-tex">
@@ -479,7 +421,6 @@
                                 <img src="<?= base_url('assets/images/ridge.png')?>" class="card-img-bottom" alt="Image 2">
                             </div>
                         </div>
-
                         <div class="col-3 col-md-3 card-pd-style">
                             <div class="card border-0 shadow bg-white border-radius-style">
                                 <div class="padding-tex">
@@ -488,9 +429,7 @@
                                 <img src="<?= base_url('assets/images/pointed.png')?>" class="card-img-bottom" alt="Image 2">
                             </div>
                         </div>
-
                         <!-- Repeat the above card structure for the remaining cards -->
-
                     </div>  
                     <div class="container button-style-1">
                 <button class="plus-button-style rounded-circle border-0 shadow-lg bg-white">
@@ -508,8 +447,6 @@
                         <h5>(One Included - 250gms)</h5>
                     </div>
                 </div>
-
-        
                 <div class="row mt-2">
                     <div class="col-3 col-md-3 card-pd-style">
                         <div class="card border-0 shadow-lg bg-white border-radius-style">
@@ -550,15 +487,8 @@
                     <!-- Repeat the above card structure for the remaining cards -->
 
                 </div>
-
-               
-
-
-            
             </div>
         </section>  
-       
-       
         <div class="margins-of-sec " >
             <div>
                 <div class="why-freshoo">
@@ -586,8 +516,6 @@
                                         <p class="why-sec-content">Free door delivery</p>
                                     </div>
 
-                            
-
                                     <!-- icon 3  -->
 
                                     <div class="d-flex flex-row justify-content-start">
@@ -609,8 +537,7 @@
                                     </div>
 
                                     <!-- icon 6 -->
-                                            
-
+                            
                                     <div class="d-flex flex-row justify-content-start">
                                         <i class='fa fa-check-circle why-icon-style'></i>
                                         <p class="why-sec-content">Cancel any time</p>
@@ -618,8 +545,6 @@
                                 </div>
                             </div>
                             <div class="col-md-7">
-                    
-            
                                 <!-- Image -->
                                     <img src="<?= base_url('assets/images/why-img.png')?>" alt="Responsive Image" class="why-container-side-img">
                             
@@ -699,7 +624,6 @@
                             </div>
                         </div>
                     </div>
-                
                 </div>
             </div>
 
@@ -707,15 +631,14 @@
                 <div class="container button-style-1  mb-4">
                     
                         <a id="create-custom-plan" style="cursor:pointer;" class="create-plan-button text-white text-decoration-none">  Create Your Own Plan<p> Minimum Value ₹1000 per Week</p></a>
+<!--
                         <a href="compare-plan.php" class="new-compare text-white text-center text-decoration-none">
                   
                         Compare Plans</a>
+-->
                     
                 </div>
             </div>
-
-
-
         <!-- footer above section  -->
         <div class="footer-above-sec">
             <div class="mb-2">
@@ -740,12 +663,11 @@
             </div>
         </div>  
         <?php include 'include/footer-main.php' ?>
-        
+    </div>
     </body>
     <script>
     var acc = document.getElementsByClassName("accordion");
 var i;
-
 for (i = 0; i < acc.length; i++) {
   acc[i].addEventListener("click", function() {
     /* Toggle between adding and removing the "active" class,
@@ -763,3 +685,4 @@ for (i = 0; i < acc.length; i++) {
 }
 </script>
 </html>
+

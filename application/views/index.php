@@ -184,12 +184,12 @@
             </div>
             </div>  
 -->
-        <div class="margins-of-sec">
+        <div class="padding">
         <div class="container">
-            <div class="row">
-                <div class="col-md-6 col-12">
-                    <h2>About <span>5 AM Freshoo</span></h2>
-                        <p>Welcome to 5AM Fresh, a Vizag startup connecting farmers directly to your home, cutting out unnecessary intermediaries. Our weekly plans offer a variety of fresh vegetables for all household sizes, promoting a healthy lifestyle with competitive prices by eliminating middlemen.</p>
+            <div class="row align-items-center">
+                <div class="col-md-6 col-12 text-center text-md-left">
+                    <h2 class="heading2 text-uppercase">About <span>5AM Fresh</span></h2>
+                    <p>Welcome to 5AM Fresh, a Vizag startup connecting farmers directly to your home, cutting out unnecessary intermediaries. Our weekly plans offer a variety of fresh vegetables for all household sizes, promoting a healthy lifestyle with competitive prices by eliminating middlemen.</p>
                     <div class="about-cont-1">
                      <div class="about-icon">
                             <img src="./assets/images/fresh-guarantee.png?" alt="Freshness Guaranteed">
@@ -205,7 +205,7 @@
                     </div> 
                 </div>        
                 </div>   
-                <div class="col-md-6 col-12">
+                <div class="col-md-6 col-12 d-none d-md-block">
                     <img src="./assets/images/compare-veg.jpg" class="container-side-img">
                 </div>
             </div>
@@ -213,21 +213,20 @@
         </div>    
         </div>    
             <div class="plan-section" id="plan_calling">
-                <div class="row heading">
-                    <div class="col-md-2 d-none d-md-block " >
+               
+                <div class="row mb-3 align-items-center">
+                    <div class="col-md-2">
                     </div>
-                    <div class="col-md-8 col-6">
-                        <h2 >Pick a plan, suits your family.</h2>
+                    <div class="col-md-8 col-9">
+                        <h2 class="heading2 text-uppercase mb-0">Pick a plan, suits your family</h2>
                     </div>
-                    <div class="col-md-2 col-6">
-                        <a class="compare-button text-center text-decoration-none "> Compare Plans</a>
+                    <div class="col-md-2 col-3 pl-0">
+                        <a class="compare-button">Compare Plans</a>
                     </div>
                 </div>
+                <div class="row mbp">
                 
-              
-                <div class="row">
-                
-                    <div class="col-6 col-md-3 plan-main">
+                    <div class="col-6 col-lg-3 plan-main">
                     <a class="text-decoration-none"> 
                        <div class="plan">
                         <?php $plan1 = $this->data['plans'][0];
@@ -238,7 +237,7 @@
                         }
                       ?><div class="plan-pic">
                                <div>
-                                    <h3>₹<?=$plan_number?></h3>
+                                    <h3><span>₹</span><?=$plan_number?></h3>
                                    <p>Per Week</p>
                                 </div>
                                 <div>
@@ -246,13 +245,13 @@
                            </div>
                           
                            <div class="plan-text">
-                            <p class="pg-1"><?=$plan1->plan_varaities_veggies?> Varieties of Veggies</p>
-                            <p class="pg-2">Approx weight around <?=$plan1->veggies_weight?></p>
+                            <p class="pg-1">15 Varieties of Vegetables</p>
+                            <p class="pg-2">Total Weight : 7kgs</p>
                            </div>
                             
                             <div class="plan-price">
                                
-                                <p class="mt-1 text-dark">Recommended for a family 2+1</p>
+                                <p class="">Recommended<br> for a family 2+1</p>
                             </div>
                             <img src="<?= base_url('assets/images/veg-plan1.png')?>" width="100%" alt="">
                        </div>
@@ -265,7 +264,7 @@
                     </div>
                 
               
-                    <div class="col-6 col-md-3 plan-main plan-main-2">
+                    <div class="col-6 col-lg-3 plan-main plan-main-2">
                     <a class="text-decoration-none">
                        <div class="plan plan2">
                        <?php $plan2 = $this->data['plans'][1];
@@ -277,7 +276,7 @@
                       ?>
                             <div class="plan-pic">
                                <div>
-                                    <h3>₹<?=$plan_number?></h3>
+                                    <h3><span>₹</span><?=$plan_number?></h3>
                                   <p>Per Week</p>
                                 </div>
                                 <div>
@@ -285,11 +284,11 @@
                            </div>
                
                            <div class="plan-text">
-                            <p class="pg-1"><?=$plan2->plan_varaities_veggies?> Varieties of Veggies</p>
-                            <p class="pg-2">Approx weight around <?=$plan2->veggies_weight?></p>
+                            <p class="pg-1">17 Varieties of Vegetables</p>
+                            <p class="pg-2">Total Weight : 11kgs</p>
                            </div>
                             <div class="plan-price plan-price-2">                               
-                                <p class="mt-1 text-dark">Recommended for a family 2+2</p>
+                                <p class="">Recommended<br> for a family 2+2</p>
                             </div>
                             <img src="<?= base_url('assets/images/veg-plan2.png')?>" width="100%" alt="">
                        </div>
@@ -303,7 +302,7 @@
                     </div>
                
              
-                    <div class="col-6 col-md-3 plan-main plan-main-3">
+                    <div class="col-6 col-lg-3 plan-main plan-main-3">
                     <a class="text-decoration-none">
                        <div class="plan plan3">
                        <?php $plan3 = $this->data['plans'][2];
@@ -316,7 +315,7 @@
                            
                            <div class="plan-pic">
                                <div>
-                                    <h3>₹<?=$plan_number?></h3>
+                                    <h3><span>₹</span><?=$plan_number?></h3>
                                    <p>Per Week</p>
                                 </div>
                                 <div>
@@ -324,11 +323,11 @@
                            </div>
 <!--                           <h3>₹<span class=""><?=$plan_number?></span></h3>-->
                            <div class="plan-text">
-                            <p class="pg-1"><?=$plan3->plan_varaities_veggies?> Varieties of Veggies</p>
-                            <p class="pg-2">Approx weight around <?=$plan3->veggies_weight?></p>
+                            <p class="pg-1">17 Varieties of Vegetables</p>
+                            <p class="pg-2">Total Weight : 17kgs</p>
                            </div>
                             <div class="plan-price plan-price-3">                               
-                                <p class="mt-1 text-dark">Recommended for a family 4+2</p>
+                                <p class="">Recommended<br> for a family 4+2</p>
                             </div>
                             <img src="<?= base_url('assets/images/veg-plan3.png')?>" width="100%" alt="">
                        </div>
@@ -342,7 +341,7 @@
                     </div>
                 
             
-                    <div class="col-6 col-md-3 plan-main plan-main-4">
+                    <div class="col-6 col-lg-3 plan-main plan-main-4">
                     <a class="text-decoration-none">
                        <div class="plan plan4">
                        <?php $plan4 = $this->data['plans'][3];
@@ -354,7 +353,7 @@
                       ?>
                            <div class="plan-pic">
                                <div>
-                                    <h3>₹<?=$plan_number?></h3>
+                                    <h3><span>₹</span><?=$plan_number?></h3>
                                    <p>Per Week</p>
                                 </div>
                                 <div>
@@ -362,12 +361,12 @@
                            </div>
                            
                            <div class="plan-text">
-                            <p class="pg-1"><?=$plan4->plan_varaities_veggies?> Varieties of Veggies</p>
-                            <p class="pg-2">Approx weight around <?=$plan4->veggies_weight?></p>
+                            <p class="pg-1">17 Varieties of Vegetables</p>
+                            <p class="pg-2">Total Weight : 23kgs</p>
                            </div>
                             <div class="plan-price plan-price-4">
                                 
-                                <p class="mt-1 text-dark">Recommended for a large family</p>
+                                <p class="">Recommended<br> for a large family</p>
                             </div>
                             <img src="<?= base_url('assets/images/veg-plan4.png')?>" width="100%" alt="">
                        </div>
@@ -381,11 +380,11 @@
                     </div>
                 
                 <div>
-                    <div class="container button-style-1 mt-4 mb-4">             
+                    <div class="">             
                         <a id="create-custom-plan" style="cursor:pointer;" class="create-plan-button text-white text-decoration-none">  Create Your Own Plan<p> Minimum Value ₹1000 per Week</p></a> 
                     </div>
                 </div>
-                </div>        
+                </div>    
             </div>
         <div>
        
@@ -401,31 +400,31 @@
                             <div class="col-md-6">
                                 <div class="exper-content">
                                 <!-- Text content -->
-                                <h2>The 5am Fresh <br>Experience</h2>
+                                <h2 class="heading2">The 5am Fresh <br class="d-none d-md-block">Experience</h2>
                                     <div class="icon-content-1">
                                         <div class="icon-exp" >
                                             <img src="./assets/images/on-time.png">
-                                            <p class="why-sec-content">Procured <br>5am Daily</p>
+                                            <p>Procured <br>5am Daily</p>
                                         </div>
                                          <div class="icon-exp" >
                                             <img src="./assets/images/doorstep.png">
-                                           <p class="why-sec-content">Delivered to<br> Doorstep (Free)</p>
+                                           <p>Delivered to<br> Doorstep (Free)</p>
                                         </div>
                                          <div class="icon-exp" >
                                             <img src="./assets/images/quality-1.png">
-                                           <p class="why-sec-content">100% Cleaned<br> and packed</p>
+                                           <p>100% Cleaned<br> and packed</p>
                                         </div>
                                          <div class="icon-exp" >
                                             <img src="./assets/images/live.png">
-                                            <p class="why-sec-content">Live a Healthy<br> Lifestyle</p>
+                                            <p>Live a Healthy<br> Lifestyle</p>
                                         </div>
                                          <div class="icon-exp" >
                                             <img src="./assets/images/ethcial.png">
-                                             <p class="why-sec-content">Ethical<br> Sourcing</p>
+                                             <p>Ethical<br> Sourcing</p>
                                         </div>
                                         <div class="icon-exp" >
                                             <img src="./assets/images/price.png">
-                                             <p class="why-sec-content">Lowest<br> Price</p>
+                                             <p>Lowest<br> Price</p>
                                         </div>
 <!--
                                         <div class="icon-exp" >
@@ -451,7 +450,7 @@
         <div>
             <div class="exper-content d-md-none" >
                                 <!-- Text content -->
-                                <h2>The 5am Fresh <br>Experience</h2>
+                                <h2 class="heading2">The 5am Fresh <br>Experience</h2>
                                     <div class="icon-content-1">
                                         <div class="icon-exp" >
                                             <img src="./assets/images/on-time.png">
@@ -482,13 +481,14 @@
                                     </div> 
             
         </div>
-<div class="container margins-of-sec">
+           <img src="./assets/images/compare-veg.jpg" class="w-100 d-block d-md-none mt-5">
+<div class="container padding">
     <div class="row">
         <div class="col-12 col-md-6">
-            <img src="./assets/images/peopleveg.jpg" class="why-container-side-img">
+            <img src="./assets/images/peopleveg.jpg" class="why-container-side-img mb-4 mb-md-0">
         </div>
         <div class="col-12 col-md-6">
-            <h2>I wasn’t happy seeing people being overcharged.</h2>
+            <h2 class="heading2 text-center text-md-left">I wasn’t happy seeing people being overcharged.</h2>
             <p>Every year during Karthika Masam, we organize an Annadanam for 1500 people a day for 41 days. We buy vegetables directly from wholesalers and noticed that their prices are 45 times lower than those in the retail market. One day, I packed 78 types of vegetables and distributed them to my friends, explaining the price difference. They were shocked to see how much they could save. That’s when the idea of 5am Fresh came to me – to provide the same experience to the people of Vizag. We source fresh vegetables, clean, pack, and deliver them at the lowest possible prices. Since we can’t offer the lowest prices in retail, we created a weekly plan to ensure the best rates for our customers.</p>
             <p class="owner-name"><strong>-Sarath Nalla</strong></p>
         </div>
@@ -498,10 +498,10 @@
        <!-- accordions  -->
 
         <div class="accord-sec">
-            <div class="container pb-3">
+            <div class="container pb-5">
            
                 <div id="accordion">
-                <h2>FAQ's</h2>
+                <h2 class="heading2">FAQ's</h2>
                    <div class="card border-0 wow fadeInUp accord-inner">
                             <div class="card-header p-0 border-0" id="heading-240">
                                 <button class="btn btn-link accordion-title border-0 collapsed" data-toggle="collapse" data-target="#collapse-240" aria-expanded="false" aria-controls="#collapse-240"><i class="fas fa-plus text-center d-flex align-items-center justify-content-center h-100"></i> What are the different weekly plans available at 5am Fresh?                      </button>
@@ -579,8 +579,8 @@
                                 </div>
                             </div>
                         </div>
-                  <div class="btn-cls">
-                    <button class="create-plan-button">More FAQ,s</button> 
+                  <div class="btn-cls mt-4">
+                    <button class="create-plan-button">More FAQ's</button> 
                 </div>
             </div>
               
