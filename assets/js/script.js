@@ -1,9 +1,5 @@
 var baseurl = 'http://localhost/5amfresh/';
 
-$(document).on('click', '#create-custom-plan', function(){
-    var url = baseurl + 'custom-plan'; 
-    window.location.href = url;
-});
 var offerDivId = '';
 var offerCost = '';
 var recommended = '';

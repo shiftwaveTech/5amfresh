@@ -8,7 +8,7 @@ class CustomPlanController extends MY_Controller {
         parent::__construct();
         $this->template->write_view('footer', 'templates/footer');
         $this->template->add_js('assets/js/customplan.js');
-        $this->template->write('title', 'Freshoo', TRUE);
+        $this->template->write('title', '5amFresh', TRUE);
         $this->load->model('CustomPlanModel');
         $this->load->library('session');
     }
