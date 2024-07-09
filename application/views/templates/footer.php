@@ -5,11 +5,11 @@
 
                 <div class="col-md-3 d-none d-md-block">
                     <div class="footer-sec-1">  
-                        <img src="<?= base_url('assets/images/logo.png')?>" style="width:200px;" >
+                        <img src="<?= base_url('assets/images/logo.png')?>" style="width:200px; max-width: 100%;" >
                     </div>    
                 </div>
 
-                <div class="col-md-3 col-6 mb-3">
+                <div class="col-md-3 col-6 mb-2 mb-md-3">
                     <div class="footer-sec-1">
                         <h3>Need Help? </h3>
                         <ul>
@@ -50,7 +50,7 @@
         </div>
         
         <div class="col-12 text-center footer-bootom" >
-            <p class="copy-right-sec">&copy; 2024 5am Fresh. All rights reserved. </p>
+            <p class="copy-right-sec">&copy; 2024 5am Fresh. All rights reserved.</p>
             <p>Developed by <a href="https://www.shiftwave.com/" target="_blank">Shiftwave</a></p>
             <div class="footer-icons">
             <i class="fa-brands fa-x-twitter pr-1"></i>

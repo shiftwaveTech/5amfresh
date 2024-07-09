@@ -112,182 +112,141 @@
     </div>
     
 </div>    
-</div>    
-    <div class="plan-section" id="plan_calling">
-        
-        <div class="row mb-3 align-items-center">
+</div>   
+   
+   <div class="plan-section new" id="plan_calling">
+      <div class="container">
+       <div class="row align-items-center">
             <div class="col-md-2">
             </div>
-            <div class="col-md-8 col-9">
+            <div class="col-md-8 col-9 pl-0">
                 <h2 class="heading2 text-uppercase mb-0">Pick a plan, <span style="display: inline-block;">suits your family</span></h2>
             </div>
-            <div class="col-md-2 col-3 pl-0">
+            <div class="col-md-2 col-3 pl-0 pr-0">
                 <a class="compare-button">Compare Plans</a>
             </div>
-        </div>
-        <div class="row mbp">
-        
-            <div class="col-6 col-md-3 plan-main selOfferDiv" varieties="15" data-id="1" recommended="family 2+1" plan-weight="7" plan-cost="399" style= "cursor:pointer">
-            <a class="text-decoration-none"> 
-                <div class="plan">
-                <?php $plan1 = $this->data['plans'][0];
-                $plan_name = $plan1->plan_name;
-                if (preg_match('/([a-zA-Z\s]+)(\d+)/', $plan_name, $matches)) {
-                    $plan_text = trim($matches[1]);
-                    $plan_number = $matches[2];
-                }
-                ?><div class="plan-pic">
-                        <div>
-                            <h3><span>₹</span><?=$plan_number?></h3>
-                            <p>Per Week</p>
-                        </div>
-                        <div>
-                            <img src="<?= base_url('assets/images/icon-399.png') ?>" class="icon-399"></div>
-                    </div>
-                    
-                    <div class="plan-text">
-                    <p class="pg-1">15 Varieties of Vegetables</p>
-                    <p class="pg-2">Total Weight : 7kgs </p>
-                    </div>
-                    
-                    <div class="plan-price">
-                        
-                        <p class="">Recommended<br> for a family 2+1</p>
-                    </div>
-                    <img src="<?= base_url('assets/images/veg-plan1.png')?>" width="100%" alt="">
-                </div>
-                <a class="text-white text-decoration-none"> 
-                <button data-id="1" plan-cost="<?=$plan_number?>" class="selOfferDiv">
-                    CLICK HERE<span>For more information</span>
-                </button>
-                </a>
-                </a>
-            </div>
-        
-        
-            <div class="col-6 col-lg-3 plan-main plan-main-2 selOfferDiv" varieties="17" data-id="2" recommended="family 4+1" plan-weight="11" plan-cost="599" style= "cursor:pointer">
-            <a class="text-decoration-none">
-                <div class="plan plan2">
-                <?php $plan2 = $this->data['plans'][1];
-                $plan_name = $plan2->plan_name;
-                if (preg_match('/([a-zA-Z\s]+)(\d+)/', $plan_name, $matches)) {
-                    $plan_text = trim($matches[1]);
-                    $plan_number = $matches[2];
-                }
-                ?>
-                    <div class="plan-pic">
-                        <div>
-                            <h3><span>₹</span><?=$plan_number?></h3>
-                            <p>Per Week</p>
-                        </div>
-                        <div>
-                            <img src="<?= base_url('assets/images/icon-599.png') ?>" class="icon-599"></div>
-                    </div>
-        
-                    <div class="plan-text">
-                    <p class="pg-1">17 Varieties of Vegetables</p>
-                    <p class="pg-2">Total Weight : 11kgs </p>
-                    </div>
-                    <div class="plan-price plan-price-2">                               
-                        <p class="">Recommended<br> for a family 2+2</p>
-                    </div>
-                    <img src="<?= base_url('assets/images/veg-plan2.png')?>" width="100%" alt="">
-                </div>
-                <a class="text-white text-decoration-none">
-                <button  data-id="2" plan-cost="<?=$plan_number?>" class="selOfferDiv">
-                        CLICK HERE<span>For more information</span>
+       </div>
+       <div class="row">
+           
+           <div class="planwrap">
+               <div class="wrap des1">
+                   <div class="planimg">
+                       <div class="text">
+                           <div class="plantext">
+                               Plan <span>₹</span>399
+                           </div>
+                       </div>
+                       <div class="imgwrap">
+                           <img src="./assets/images/plan-img-basket.png">
+                       </div>
+                   </div>
+                   <div class="planrecm">
+                       <div class="rectext">
+                           Recommended <span>for a family</span>
+                       </div>
+                       <div class="btns">
+                           <div class="btntext">
+                               2 + 1
+                           </div>
+                       </div>
+                   </div>
+                   <div class="contenttext">
+                       <p>No. of Vegetables: <strong>15</strong></p>
+                       <p>Approx Weight: <strong>7Kgs</strong></p>
+                       <a class="selOfferDiv" varieties="15" data-id="1" recommended="family 2+1" plan-weight="7" plan-cost="399">Sign Now</a>
+                   </div>
+               </div>
+               <div class="wrap des2">
+                   <div class="planimg">
+                       <div class="text">
+                           <div class="plantext">
+                               Plan <span>₹</span>599
+                           </div>
+                       </div>
+                       <div class="imgwrap">
+                           <img src="./assets/images/plan-img-basket.png">
+                       </div>
+                   </div>
+                   <div class="planrecm">
+                       <div class="rectext">
+                           Recommended <span>for a family</span>
+                       </div>
+                       <div class="btns">
+                           <div class="btntext">
+                               2 + 2
+                           </div>
+                       </div>
+                   </div>
+                   <div class="contenttext">
+                       <p>No. of Vegetables: <strong>17</strong></p>
+                       <p>Approx Weight: <strong>11Kgs</strong></p>
+                       <a class="selOfferDiv" varieties="17" data-id="2" recommended="family 4+1" plan-weight="11" plan-cost="599">Sign Now</a>
+                   </div>
+               </div>
+               <div class="wrap des3">
+                   <div class="planimg">
+                       <div class="text">
+                           <div class="plantext">
+                               Plan <span>₹</span>799
+                           </div>
+                       </div>
+                       <div class="imgwrap">
+                           <img src="./assets/images/plan-img-basket.png">
+                       </div>
+                   </div>
+                   <div class="planrecm">
+                       <div class="rectext">
+                           Recommended <span>for a family</span>
+                       </div>
+                       <div class="btns">
+                           <div class="btntext">
+                               4 + 2
+                           </div>
+                       </div>
+                   </div>
+                   <div class="contenttext">
+                       <p>No. of Vegetables: <strong>17</strong></p>
+                       <p>Approx Weight: <strong>17Kgs</strong></p>
+                       <a class="selOfferDiv" varieties="17" data-id="3" recommended="family 4+2" plan-weight="17" plan-cost="799">Sign Now</a>
+                   </div>
+               </div>
+               <div class="wrap des4">
+                   <div class="planimg">
+                       <div class="text">
+                           <div class="plantext">
+                               Plan <span>₹</span>999
+                           </div>
+                       </div>
+                       <div class="imgwrap">
+                           <img src="./assets/images/plan-img-basket.png">
+                       </div>
+                   </div>
+                   <div class="planrecm">
+                       <div class="rectext">
+                           Recommended <span>for a family</span>
+                       </div>
+                       <div class="btns">
+                           <div class="btntext">
+                               Large
+                           </div>
+                       </div>
+                   </div>
+                   <div class="contenttext">
+                       <p>No. of Vegetables: <strong>17</strong></p>
+                       <p>Approx Weight: <strong>23Kgs</strong></p>
+                       <a class="selOfferDiv" varieties="17" data-id="4" recommended="large family" plan-weight="23" plan-cost="999">Sign Now</a>
+                   </div>
+               </div>
+           </div>
+       </div>
+       <div class="row">
+           <div class="col-12">
+               <a id="create-custom-plan" style="cursor:pointer;" class="create-plan-button text-white text-decoration-none"> Create Your Own Plan<p> Minimum Value ₹1000 per Week</p></a> 
+           </div>
+       </div>
+       </div>
+   </div>
 
-                </button>
-                </a>
-                </a>
-            </div>
-        
-        
-            <div class="col-6 col-lg-3 plan-main plan-main-3 selOfferDiv" varieties="17" data-id="3" recommended="family 4+2" plan-weight="17" plan-cost="799" style= "cursor:pointer">
-            <a class="text-decoration-none">
-                <div class="plan plan3">
-                <?php $plan3 = $this->data['plans'][2];
-                $plan_name = $plan3->plan_name;
-                if (preg_match('/([a-zA-Z\s]+)(\d+)/', $plan_name, $matches)) {
-                    $plan_text = trim($matches[1]);
-                    $plan_number = $matches[2];
-                }
-                ?>
-                    
-                    <div class="plan-pic">
-                        <div>
-                            <h3><span>₹</span><?=$plan_number?></h3>
-                            <p>Per Week</p>
-                        </div>
-                        <div>
-                            <img src="<?= base_url('assets/images/icon-799.png')?>" class="icon-799"></div>
-                    </div>
-                    <div class="plan-text">
-                    <p class="pg-1">17 Varieties of Vegetables</p>
-                    <p class="pg-2">Total Weight : 17kgs </p>
-                    </div>
-                    <div class="plan-price plan-price-3">                               
-                        <p class="">Recommended<br> for a family 4+2</p>
-                    </div>
-                    <img src="<?= base_url('assets/images/veg-plan3.png')?>" width="100%" alt="">
-                </div>
-                <a class="text-white text-decoration-none">
-                <button data-id="3" plan-cost="<?=$plan_number?>" class="selOfferDiv">
-                        CLICK HERE<span>For more information</span>
-
-                </button>
-                </a>
-                </a>
-            </div>
-        
-    
-            <div class="col-6 col-lg-3 plan-main plan-main-4 selOfferDiv" varieties="17" data-id="4" recommended="large family" plan-weight="23" plan-cost="999" style= "cursor:pointer">
-            <a class="text-decoration-none">
-                <div class="plan plan4">
-                <?php $plan4 = $this->data['plans'][3];
-                $plan_name = $plan4->plan_name;
-                if (preg_match('/([a-zA-Z\s]+)(\d+)/', $plan_name, $matches)) {
-                    $plan_text = trim($matches[1]);
-                    $plan_number = $matches[2];
-                }
-                ?>
-                    <div class="plan-pic">
-                        <div>
-                            <h3><span>₹</span><?=$plan_number?></h3>
-                            <p>Per Week</p>
-                        </div>
-                        <div>
-                            <img src="<?= base_url('assets/images/icon-999.png') ?>" class="icon-999"></div>
-                    </div>
-                    
-                    <div class="plan-text">
-                    <p class="pg-1">17 Varieties of Vegetables</p>
-                    <p class="pg-2">Total Weight : 23kgs </p>
-                    </div>
-                    <div class="plan-price plan-price-4">
-                        
-                        <p class="">Recommended<br> for a large family</p>
-                    </div>
-                    <img src="<?= base_url('assets/images/veg-plan4.png')?>" width="100%" alt="">
-                </div>
-                <a class="text-white text-decoration-none">
-                <button data-id="1" plan-cost="<?=$plan_number?>" class="selOfferDiv">
-                        CLICK HERE<span>For more information</span>
-
-                </button>
-                </a>
-                </a>
-            </div>
-        
-        <div>
-            <div class="">             
-                <a id="create-custom-plan" style="cursor:pointer;" class="create-plan-button text-white text-decoration-none">  Create Your Own Plan<p> Minimum Value ₹1000 per Week</p></a> 
-            </div>
-        </div>
-        </div>    
-    </div>
-<div>
-</div> 
     <div class="fresh-bg d-none d-md-block">
         <div class="why-freshoo">
             <div class="container-fulid">

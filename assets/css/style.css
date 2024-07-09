@@ -899,6 +899,178 @@ footer a, footer a:hover{
     margin: 0 0 15px;
 }
 
+.planwrap{
+    display: flex;
+    gap: 20px;
+    margin: 20px 0 10px;
+    padding: 0;
+}
+
+.planwrap .wrap{
+    width: 100%;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 0 10px #00000020;
+    border: 1px solid;
+    overflow: hidden;
+}
+
+.planwrap .wrap .planimg{
+    display: flex;
+    align-items: center;
+    padding: 15px 0 0;
+    border-bottom: 1px solid;
+}
+
+.planwrap .wrap .planimg .text{
+    width: 100%;
+    padding: 0 10px 0 15px;
+}
+
+.planwrap .wrap .planimg .text .plantext{
+    font-size: 28px;
+    font-weight: 700;
+    font-family: "Poppins";
+    line-height: 32px;
+}
+
+.planwrap .wrap .planimg .text .plantext span{
+    font-family: "Open Sans";
+    font-weight: 600;
+}
+
+.planwrap .wrap .planimg .text .plantext:after{
+    content: "Per Week";
+    font-size: 12px;
+    font-weight: 500;
+    color: #111;
+    display: block;
+    line-height: 16px;
+}
+
+.planwrap .wrap .planimg .imgwrap{
+    width: 90px;
+    min-width: 90px;
+}
+
+.planwrap .wrap .planimg .imgwrap img{
+    width: 100%;
+}
+
+.planwrap .wrap .planrecm{
+    padding: 15px 15px;
+    border-bottom: 2px dotted;
+    display: flex;
+    align-items: center;
+}
+
+.planwrap .wrap .planrecm .rectext{
+    font-size: 18px;
+    width: 100%;
+    font-weight: 400;
+    line-height: 22px;
+}
+
+.planwrap .wrap .planrecm .rectext span{
+    display: block;
+}
+
+.planwrap .wrap .planrecm .btns{
+    text-align: center;
+}
+
+.planwrap .wrap .planrecm .btns .btntext{
+    border: 2px solid;
+    border-radius: 20px;
+    font-family: "Poppins";
+    font-size: 20px;
+    font-weight: 600;
+    display: inline-block;
+    padding: 8px 14px;
+    line-height: 20px;
+    white-space: nowrap;
+}
+
+.planwrap .wrap .contenttext{
+    padding: 20px 15px;
+    text-align: center;
+}
+
+.planwrap .wrap .contenttext p{
+    margin: 0;
+}
+
+.planwrap .wrap .contenttext p strong{
+/*    font-weight: 600;*/
+}
+
+.planwrap .wrap .contenttext a{
+    font-size: 18px;
+    font-family: "Poppins";
+    font-weight: 600;
+    display: inline-block;
+    border: 2px solid #008e5c;
+    padding: 10px 25px;
+    line-height: 1;
+    margin: 15px 0 0;
+    border-radius: 20px;
+    text-decoration: none !important;
+    color: #008e5c !important;
+    cursor: pointer;
+}
+
+/*Card 1*/
+
+.planwrap .wrap.des1, .planwrap .wrap.des1 .planimg, .planwrap .wrap.des1 .planrecm { border-color: #54a85b; }
+
+.planwrap .wrap.des1 .planimg{ background: #ebfbee; }
+
+.planwrap .wrap.des1 .planimg .text .plantext { color: #54a85b; }
+
+.planwrap .wrap.des1 .planrecm .btns .btntext{
+    color: #54a85b;
+    border-color: #54a85b;
+}
+
+/*Card 2*/
+
+.planwrap .wrap.des2, .planwrap .wrap.des2 .planimg, .planwrap .wrap.des2 .planrecm { border-color: #af841e; }
+
+.planwrap .wrap.des2 .planimg{ background: #fef7e7; }
+
+.planwrap .wrap.des2 .planimg .text .plantext { color: #af841e; }
+
+.planwrap .wrap.des2 .planrecm .btns .btntext{
+    color: #af841e;
+    border-color: #af841e;
+}
+
+/*Card 3*/
+
+.planwrap .wrap.des3, .planwrap .wrap.des3 .planimg, .planwrap .wrap.des3 .planrecm { border-color: #d14746; }
+
+.planwrap .wrap.des3 .planimg{ background: #fdf5f6; }
+
+.planwrap .wrap.des3 .planimg .text .plantext { color: #d14746; }
+
+.planwrap .wrap.des3 .planrecm .btns .btntext{
+    color: #d14746;
+    border-color: #d14746;
+}
+
+/*Card 4*/
+
+.planwrap .wrap.des4, .planwrap .wrap.des4 .planimg, .planwrap .wrap.des4 .planrecm { border-color: #4f979d; }
+
+.planwrap .wrap.des4 .planimg{ background: #f1fbfc; }
+
+.planwrap .wrap.des4 .planimg .text .plantext { color: #4f979d; }
+
+.planwrap .wrap.des4 .planrecm .btns .btntext{
+    color: #4f979d;
+    border-color: #4f979d;
+}
+
 /*Scrollbar color*/
 
 @media (min-width:992px){
@@ -930,7 +1102,12 @@ footer a, footer a:hover{
         color: white;
         vertical-align: sub;      
     }
-
+    .planwrap{
+        flex-wrap: wrap;
+    }
+    .planwrap .wrap{
+        width: calc(50% - 10px);
+    }
 }
 
 @media (max-width:767px){
@@ -1014,9 +1191,23 @@ footer a, footer a:hover{
     header .container-fluid.bottom-header{
         padding: 0;
     }
+    footer h3{
+        font-size: 22px;
+    }
+    .planwrap .wrap .contenttext p{
+        font-size: 18px;
+    }
 }
 
-
+@media (max-width: 500px){
+    .planwrap .wrap{
+        width: 100%;
+    }
+    .planwrap .wrap .planimg .imgwrap{
+        width: 110px;
+        min-width: 110px;
+    }
+}
 
 
 
