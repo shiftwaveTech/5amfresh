@@ -1,8 +1,5 @@
 <html>
     <head>
-       <title>Freshoo</title>
-       <meta name="description" content="">
-        <?php //include 'include/header.php' ?>
         <link rel="stylesheet" href="<?= base_url('assets/css/custom-plan.css')?>">
     </head>
     <style>
@@ -66,9 +63,7 @@
 }
         .work-plan{text-align: left;}
         
-        @media(max-width:768px){
-            .plan-btn{font-size:16px; }
-            .plan-padd{padding: 5px;}}
+        @media(max-width:768px){.plan-padd{padding: 5px;}}
     </style>
 
     <body>
@@ -79,10 +74,10 @@
            <div class="container">
                <div class="row">
                        <div class="col-12 text-center pb-3 pt-3 plan-btns-1">
-                         <a href="" class="plan-btn">399</a>
-                         <a href="" class="plan-btn">₹599</a>
-                         <a href="" class="plan-btn">₹799</a>
-                         <a href="" class="plan-btn">₹999</a>                         
+                       <a href="" class="plan-btn selOfferDiv" varieties="15" data-id="1" recommended="family 2+1" plan-weight="7" plan-cost="399">₹399</a>
+                         <a href="" class="plan-btn selOfferDiv" varieties="17" data-id="2" recommended="family 4+1" plan-weight="11" plan-cost="599">₹599</a>
+                         <a href="" class="plan-btn selOfferDiv" varieties="17" data-id="3" recommended="family 4+2" plan-weight="17" plan-cost="799">₹799</a>
+                         <a href="" class="plan-btn selOfferDiv" varieties="17" data-id="4" recommended="large family" plan-weight="23" plan-cost="999">₹999</a>                         
                       </div>
                </div>
         <section class="custom-plan">

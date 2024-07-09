@@ -631,11 +631,9 @@
                 <div class="container button-style-1  mb-4">
                     
                         <a id="create-custom-plan" style="cursor:pointer;" class="create-plan-button text-white text-decoration-none">  Create Your Own Plan<p> Minimum Value ₹1000 per Week</p></a>
-<!--
                         <a href="compare-plan.php" class="new-compare text-white text-center text-decoration-none">
                   
                         Compare Plans</a>
--->
                     
                 </div>
             </div>

@@ -1,9 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <title>Freshoo</title>
-    <meta name="description" content="">
-    <?php //include 'include/header.php' ?>
     <style>
    .btn-next{ font-family: "Costa Ptf Demi";border-radius:20px;background-color: #fd632f; color: #fff; border-color:#fd632f;padding: .75rem 7rem; border:none;justify-content: center;font-size: 18px;letter-spacing: 1px;}
 
@@ -90,7 +84,6 @@
 </head>
 <body style="backgorund-color:hsl(0deg 0% 95.69%)">
 <div>
-<?php //include 'include/menu-sec.php' ?>
 </div>
 
 <section>
@@ -229,12 +222,6 @@
                                             <img src="./assets/images/price.png">
                                              <p>Lowest<br> Price</p>
                                         </div>
-<!--
-                                        <div class="icon-exp" >
-                                            <img src="./assets/images/live.png">
-                                             <p class="why-sec-content">No GST, No Packing Charges, No Handling Charges you just pay for vegetables</p>
-                                        </div>
--->
                                       </div>  
                                         
                                     </div>        
@@ -351,9 +338,7 @@
                 </div>
             
             </div>
-        </div>
-
-       
+        </div>       
 
 
 <?php //include 'include/footer-main.php' ?>
@@ -394,40 +379,6 @@
             }
         });
     }
-</script>
-
-<script>
-// $(document).ready(function() {
-//         var weeklyPlanValue = $('#dummyWeeklyPlan').val();
-//     $('#validationCustomDropdown').change(function() {
-//          var weeklyPlanValue = parseInt($(this).val());
-
-//         $('#monthlyofferPrice').text('Get One Week Free (Worth ₹' + (weeklyPlanValue  ) + ')');
-//         $('#sixmonthsofferPrice').text('Get Four Weeks Free (Worth ₹' + (weeklyPlanValue * 4) + ')');
-//         $('#yearlyofferPrice').text('Get Eight Weeks Free (Worth ₹' + (weeklyPlanValue * 8) + ')');
-
-//         $('#weeklyPlanPrice').text('₹' + weeklyPlanValue);
-           
-    
-//     });
-        
-//     $('.selectOfferPlan').click(function() {
-//         var offer = $(this).find('input').val(); 
-//         if(offer == 'Monthly') {
-//             $('#offerDiscountWeeks').text(' 4 weeks + One  Free  Week ');
-//             $('#totalPrice').text('₹' + (weeklyPlanValue * 4 ));
-//         } else if(offer == '6 Months') {
-//             $('#offerDiscountWeeks').text(' 26 weeks + Four  Free  Weeks ');
-//             $('#totalPrice').text('₹' + (weeklyPlanValue * 26 ));
-//         } else if(offer == 'Yearly') {
-//             $('#offerDiscountWeeks').text(' 52 weeks + Eight  Free  Weeks ');
-//             $('#totalPrice').text('₹' + (weeklyPlanValue * 52 ));
-//         }
-    
-//     });
-
-// });
-
 
 $(document).ready(function() {
     var weeklyPlanValue = parseInt($('#dummyWeeklyPlan').val());
@@ -481,15 +432,4 @@ $(document).ready(function() {
     // Trigger change event initially to set prices based on default weekly plan
     $('#validationCustomDropdown').change();
 });
-
-
-
-
-
-
-
 </script>
-
-
-</body>
-</html>

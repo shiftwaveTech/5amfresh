@@ -42,11 +42,11 @@ if ( ! function_exists('modifiedDate'))
 			if($givenDate){
 			 //	$date = date('m-d-Y', strtotime($givenDate));                              
 			//	$nextday =  date('m-d-Y', strtotime($givenDate . " +1 days"));
-			$nextday =  date('Y-m-d', strtotime($givenDate . " +1 days"));
-				if($nextday > date('Y-m-d')){
+			$nextday =  date('m-d', strtotime($givenDate . " +1 days"));
+				if($nextday > date('m-d')){
 					$recordDate =  date('h:i A', strtotime($givenDate));
 				}else{
-					$recordDate =  date('M j, Y', strtotime( $givenDate));
+					$recordDate =  date('M j', strtotime( $givenDate));
 				}
 				return $recordDate;
 			}

@@ -1,19 +1,15 @@
-<?php
-// Define the base URL for the images
-$base_url = 'http://localhost/freshoo/';
-?>
-<html>
+
 <head>
     <title>Freshoo</title>
     <meta name="description" content="">
-    <?php include 'include/header.php' ?>
+    <?php // include 'include/header.php' ?>
     <link rel="stylesheet" href="assets/css/custom-plan-review.css">
     <style>
     </style>
 </head>
 <body>
     <div>
-        <?php include 'include/menu-sec.php' ?>
+        <?php //include 'include/menu-sec.php' ?>
     </div>
     <section class="custom-plan">
         <div class="container">
@@ -259,6 +255,6 @@ $base_url = 'http://localhost/freshoo/';
               
         </div>
     </section>
-    <?php include 'include/footer-main.php' ?>
+    <?php //include 'include/footer-main.php' ?>
 </body>
 </html>

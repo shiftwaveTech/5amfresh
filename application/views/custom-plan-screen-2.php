@@ -3,16 +3,20 @@
 <head>
     <title>Freshoo</title>
     <meta name="description" content="">
-    <?php //include 'include/header.php' ?>
+    <?php //include 'include/header.php' ?> 
+    <style>
+                   .btn-next{border-radius:20px;background-color: #fd632f; color: #fff; border-color:#fd632f;padding: .75rem 7rem; border:none;}
+    
+            @media (max-width:768px){
+            .btn-next{border-radius:20px;background-color: #fd632f; color: #fff; border-color:#fd632f;padding: 1rem; border:none;}
+.plan-padd{padding: 5px;}
+        }
+    </style>
 </head>
 <body style="backgorund-color:hsl(0deg 0% 95.69%)">
 <div>
 <?php //include 'include/menu-sec.php' ?>
 </div>
-        <style>
-         @media(max-width:768px){.plan-padd{padding: 5px;}}
-    
-    </style>
 <section>
 <div class="container mt-4">
     <div>
@@ -23,13 +27,13 @@
                         <p>Make Your Own Plan Minimum value should be ₹1200 per week</p>
                     </div>
                 </div>
-                
 <!--
+                
                         <div class="col-12 col-md-4">
                             <div class="input-group-text-style" style="cursor:pointer;">
-                                <div class="icon-text" id="iconText">
+                                <div class="icon-text" id="iconText"  >
                                     <p>I don't Need</p>
-                                   <i class="fas fa-check-square square-icon-style" id="dontNeedIcon"></i>
+                                   <i class="fas fa-check-square square-icon-style" id="dontNeedIcon"  ></i>
                                 </div>
                             </div>
                         </div>
@@ -37,50 +41,47 @@
                       
         </div>
     </div>
-
-
     <div class="d-flex align-items-center justify-content-center text-center">
         <div class="custom-plan">
-            <h2>Root <span>Vegetables</span></h2>
-            <p>Root vegetables provide essential nutrients like vitamins, minerals, and dietary fiber, supporting overall health and digestion.</p>
+            <h2>Fresh <span>Leafy Vegetables</span></h2>
+            <p>Fresh leafy vegetables provide essential vitamins, minerals, and fiber crucial for maintaining overall health and well-being.</p>
         </div>
     </div>
 
-    
     <div class="row mt-2 plan-padd">
         <div class="col-3 col-md-3 card-pd-style">
             <div class="card border-0 shadow-lg bg-white border-radius-style">
                 <div class="padding-tex">
-                    <p class="card-title text-center">Carrot</p>
+                    <p class="card-title text-center">Spinach</p>
                 </div>
-                <img src="<?= base_url('assets/images/carrot.png')?>" class="card-img-bottom" alt="Image 1">
+                <img src="<?= base_url('assets/images/spinach.png')?>" class="card-img-bottom" alt="Image 1">
             </div>
         </div>
 
         <div class="col-3 col-md-3 card-pd-style">
             <div class="card border-0 shadow bg-white border-radius-style">
                 <div class="padding-tex">
-                    <p class="card-title text-center">Sweet Potato</p>
+                    <p class="card-title text-center">Mint Leaves</p>
                 </div>
-                <img src="<?= base_url('assets/images/potato.png')?>" class="card-img-bottom" alt="Image 2">
+                <img src="<?= base_url('assets/images/mint.png')?>" class="card-img-bottom" alt="Image 2">
             </div>
         </div>
 
         <div class="col-3 col-md-3 card-pd-style">
             <div class="card border-0 shadow bg-white border-radius-style">
                 <div class="padding-tex">
-                    <p class="card-title text-center">Radish</p>
+                    <p class="card-title text-center">Amaranth</p>
                 </div>
-                <img src="<?= base_url('assets/images/radish.png')?>" class="card-img-bottom" alt="Image 2">
+                <img src="<?= base_url('assets/images/amaranth.png')?>" class="card-img-bottom" alt="Image 2">
             </div>
         </div>
 
         <div class="col-3 col-md-3 card-pd-style">
             <div class="card border-0 shadow bg-white border-radius-style">
                 <div class="padding-tex">
-                    <p class="card-title text-center">Beetroot</p>
+                    <p class="card-title text-center">Sorrel Leaves</p>
                 </div>
-                <img src="<?= base_url('assets/images/beetroot.png')?>" class="card-img-bottom" alt="Image 2">
+                <img src="<?= base_url('assets/images/sorel.png')?>" class="card-img-bottom" alt="Image 2">
             </div>
         </div>
 
@@ -88,14 +89,14 @@
 
     </div>
 
-
-
+    
     <div class="row mb-2 mt-4">
         <div class="col-9 col-md-10 custom-plan">
-            <p>How many Root veggie varieties you need per week</p>
+            <p>How many leafy veggie varieties you need per week</p>
         </div>
         <div class="col-3 col-md-2" style="padding: 0 14px;">
-            <select class="form-select" id="Selectrootvegetable" name="leave_type" required="">
+            <select  class="form-select" id="Selectleafyvegetable" name="leave_type" required="">
+               
             <option value="1">1</option>
                 <option value="2">2</option>
                 <option value="3">3</option>
@@ -104,52 +105,40 @@
             </select>
         </div>
     </div>
-  
-
-
-
     <div class="row no-gutters">
         <div class="col-8 col-md-10 custom-plan">
             <p>Required weight per variety</p>
         </div>
         <div class="col-2 col-md-1">
             <div class="input-group">
-                <input type="text" class="form-control zero-btn-style-2 margin-right-style" 
-                    placeholder="Kg"
-                    oninput="this.value = this.value.replace(/[^0-9]/g, '').slice(0, 2)"
-                    maxlength="3"
-                    oninput="this.style.borderColor = ''"
-                    id="kgInput"
-                    >
+                    <input id="kgInput" type="text" class="form-control zero-btn-style-2 margin-right-style" placeholder="Kg"
+                    oninput="this.value = this.value.replace(/[^0-9]/g, '').slice(0, 2); this.style.borderColor = ''"
+                                                maxlength="3">
             </div>
         </div>
         <div class="col-2 col-md-1">
             <div class="input-group">
-                    <input type="text" class="form-control zero-btn-style-2" 
-                        placeholder="Gms"
-                        oninput="this.value = this.value.replace(/[^0-9]/g, '').slice(0, 3)"
-                        maxlength="3"
-                        oninput="this.style.borderColor = ''"
-                        id="gmInput"
-                    >
+                    <input id="gmInput" type="text" class="form-control zero-btn-style-2" placeholder="Gms" oninput="this.value = this.value.replace(/[^0-9]/g, '').slice(0, 3); this.style.borderColor = ''"
+                                            maxlength="3"> 
             </div>
         </div>
     </div>
-
-   
     <div class="margins-of-sec">
     <p id="errortext" style="color:red;display:flex;justify-content: center;"></p><br>
         <div class="container button-style-1 mt-3 mb-4">
-            <a href="<?= base_url('custom-plan-1')?>" class="text-white text-decoration-none mr-1">
+            <a href="<?= base_url('custom-plan')?>" class="text-white text-decoration-none mr-1">
             <button class="btn create-plan-button prev-btn-style">PREVIOUS</button></a>
-            <a id="custom-plan-3" style="cursor:pointer;" class="text-white text-decoration-none">
-            <button onclick = "RootVegetablesValidation()" class="btn create-plan-button prev-btn-style">NEXT</button></a>
+            <a id="custom-plan-2" style="cursor:pointer;" class="text-white text-decoration-none">
+            <button onclick="LeafyVegetablesValidation()" class="btn create-plan-button prev-btn-style">NEXT</button></a>
         </div>
     </div>
 </div>
 </section>
 
 <?php //include 'include/footer-main.php' ?>
+///
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+//
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
@@ -163,8 +152,7 @@
             var text = document.querySelector('.icon-text p');
             text.style.color = icon.classList.contains('active') ? '#0f9b49' : ''; // Empty string resets to default color
         });
-    
-
+       
 </script>
 
 </body>

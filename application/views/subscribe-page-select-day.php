@@ -1,9 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <title>Freshoo</title>
-    <meta name="description" content="">
-    <?php //include 'include/header.php' ?>
     <style>
    .btn-next{ font-family: "Costa Ptf Demi";border-radius:20px;background-color: #fd632f; color: #fff; border-color:#fd632f;padding: .75rem 7rem; border:none;justify-content: center;font-size: 18px;letter-spacing: 1px;}
 
@@ -329,16 +323,6 @@
            
                 <div id="accordion" class="py-4">
                 <h2>FAQ's</h2>
-                    <!-- <div class="card border-0">
-                        <div class="card-header p-0 border-0" id="heading-239">
-                        <button class="btn btn-link accordion-title border-0 collapse" data-toggle="collapse" data-target="#collapse-239" aria-expanded="true" aria-controls="#collapse-239"><i class="fas fa-plus text-center d-flex align-items-center justify-content-center h-100"></i>lorem header  1 </button>
-                        </div>
-                        <div id="collapse-239" class="collapse show" aria-labelledby="heading-239" data-parent="#accordion">
-                            <div class="card-body accordion-body">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                            </div>
-                        </div>
-                    </div> -->
                     <div class="card border-0 wow fadeInUp accord-inner">
                         <div class="card-header p-0 border-0" id="heading-240">
                             <button class="btn btn-link accordion-title border-0 collapsed" data-toggle="collapse" data-target="#collapse-240" aria-expanded="false" aria-controls="#collapse-240"><i class="fas fa-plus text-center d-flex align-items-center justify-content-center h-100"></i>What are the different weekly plans available at 5am Fresh? </button>
@@ -438,5 +422,3 @@
         });
     });
 </script>
-</body>
-</html>

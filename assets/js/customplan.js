@@ -1,47 +1,15 @@
-var baseurl = 'http://localhost/Freshoo/';
-
+var baseurl = 'http://localhost/5amfresh/';
 $(document).on('click', '#create-custom-plan', function(){
-    var url = baseurl+'custom-plan'; 
-	window.location.href=url;
+    var url = baseurl + 'custom-plan'; 
+    window.location.href = url;
 });
-
-// $(document).on('click', '#custom-plan-1', function(){
-//     var url = baseurl+'custom-plan-1'; 
-// 	window.location.href=url;
-// });
-
-// $(document).on('click', '#custom-plan-2', function(){
-//     var url = baseurl+'custom-plan-2'; 
-// 	window.location.href=url;
-// });
-
-// $(document).on('click', '#custom-plan-3', function(){
-//     var url = baseurl+'custom-plan-3'; 
-// 	window.location.href=url;
-// });
-
-// $(document).on('click', '#custom-plan-4', function(){
-//     var url = baseurl+'custom-plan-4'; 
-// 	window.location.href=url;
-// });
-
-// $(document).on('click', '#custom-plan-5', function(){
-//     var url = baseurl+'custom-plan-5'; 
-// 	window.location.href=url;
-// });
-
-// $(document).on('click', '#custom-plan-final', function(){
-//     var url = baseurl+'custom-plan-final'; 
-// 	window.location.href=url;
-// });
-
-
-
-//Custom Plan Page Check Box Validation
+///
 
 $(document).ready(function() {
-    let savedValues = JSON.parse(localStorage.getItem('customPlanData'));
-        if (savedValues) {
+    let savedValues = localStorage.getItem('customPlanData');
+    if (savedValues) {
+        try {
+            savedValues = JSON.parse(savedValues);
             savedValues.forEach(function(item) {
                 let $item = $(`.item[data-item="${item.item}"]`);
                 if ($item.length) {
@@ -50,7 +18,25 @@ $(document).ready(function() {
                     $item.find('input[placeholder="Gms"]').val(item.gms);
                 }
             });
+        } catch (e) {
+            console.error('Error parsing customPlanData from localStorage', e);
+            localStorage.removeItem('customPlanData');
         }
+    }
+//Custom Plan Page Check Box Validation
+
+// $(document).ready(function() {
+//     let savedValues = JSON.parse(localStorage.getItem('customPlanData'));
+//         if (savedValues) {
+//             savedValues.forEach(function(item) {
+//                 let $item = $(`.item[data-item="${item.item}"]`);
+//                 if ($item.length) {
+//                     $item.find('.square-icon-style').addClass('checked');
+//                     $item.find('input[placeholder="Kg"]').val(item.kg);
+//                     $item.find('input[placeholder="Gms"]').val(item.gms);
+//                 }
+//             });
+//         }
     // Handle the click event on checkboxes for all items
     $('.square-icon-style').click(function() {
         $(this).toggleClass('checked');
@@ -74,7 +60,6 @@ $(document).ready(function() {
                 $kgInput.css('border-color', '');
                 $gmInput.css('border-color', '');
             }
-
             if (gmValue || kgValue) {
                 $kgInput.css('border-color', '');
                 $gmInput.css('border-color', '');
@@ -85,9 +70,9 @@ $(document).ready(function() {
         }
     });
 
-    // Handle input event on kg and gms input fields
+    
     $('input[placeholder="Kg"], input[placeholder="Gms"]').on('input', function() {
-        $('input[placeholder="Kg"]').css('border-color', ''); // Remove the red border when user starts typing
+        $('input[placeholder="Kg"]').css('border-color', ''); 
         $('input[placeholder="Gms').css('border-color', '');
         $('#errortext').text('');
     });
@@ -107,7 +92,6 @@ function customPlanValidation() {
         let kgValue = $kgInput.val();
         let gmValue = $gmInput.val();
         let itemName = $(this).find('.list-group-item:nth-child(2)').text();
-
         if ($(this).find('.square-icon-style').hasClass('checked')) {
             if (kgValue || gmValue) {
                 hasCheckedItem = true;
@@ -127,7 +111,6 @@ function customPlanValidation() {
             }
         }
     });
-
     if (inputMissing) {
         $('#errortext').text('Please enter Kg or Gms for the selected items').fadeIn(1000, function() {
             setTimeout(function() {
@@ -143,10 +126,8 @@ function customPlanValidation() {
                     $('#errortext').slideUp(1000).fadeOut(1000);
                 }, 1000);
             });
-            return false;
-            
+            return false;            
         }
-
     if (!hasCheckedItem) {
         $('#errortext').text('Please select at least one item').fadeIn(1000, function() {
             setTimeout(function() {
@@ -158,17 +139,22 @@ function customPlanValidation() {
     localStorage.setItem('customPlanData', JSON.stringify(valuesArray));
     $.ajax({
         type: 'POST',
-        data: JSON.stringify(valuesArray), // Convert to JSON format
-        contentType: 'application/json',   // Specify content type
+        data: JSON.stringify(valuesArray), 
+        contentType: 'application/json',   
         url: baseurl + 'CustomPlanController/saveEssentialVegetables',
         success: function(data) {
+            // var trim = data.trim();
+            // if(trim == 'success')
+            //     {
+                    var url = baseurl + 'custom-plan-1'; 
+                    window.location.href = url;
+                // }
             // localStorage.removeItem('customPlanData');
-            var url = baseurl + 'custom-plan-1'; 
-            window.location.href = url;
+            // var url = baseurl + 'custom-plan-1'; 
+            // window.location.href = url;
         }
     });
 }
-
 
 //leafy Vegetable Validation
 
@@ -189,7 +175,6 @@ function LeafyVegetablesValidation() {
     let gmValue = $('#gmInput').val();
     let selected = false;
     let chekedAndInput = false; 
-
     if(!dontNeedChecked && (!kgValue && !gmValue)) {
         $('#kgInput').css('border-color', 'red');
         $('#gmInput').css('border-color', 'red');
@@ -199,7 +184,6 @@ function LeafyVegetablesValidation() {
     } else {
         selected = true;
     }
-
     if(!selected) {
         $('#errortext').text('Please select at least one option').fadeIn(1000, function() {
             setTimeout(function() {
@@ -208,7 +192,6 @@ function LeafyVegetablesValidation() {
         });
         return false;
     }
-
     if(chekedAndInput) {
         $('#errortext').text('Please select only one option').fadeIn(1000, function() {
             setTimeout(function() {
@@ -222,15 +205,15 @@ function LeafyVegetablesValidation() {
         data: { leafyitems: leafyitems, kgValue: kgValue, gmValue: gmValue },
         url: baseurl + 'CustomPlanController/saveLeafyVegetables',
         success: function(data) {
-            var url = baseurl + 'custom-plan-2'; 
+            var url = baseurl + 'custom-plan-3'; 
             window.location.href = url;
         }
     });
 }
-
+   
 //Root Vegetables Validation
 
-function RootVegetablesValidation() {
+function RootVegetablesValidation() {  
     let dontNeedChecked = $('#dontNeedIcon').hasClass('active');
     let rootitems = $('#Selectrootvegetable').val();
     let kgValue = $('#kgInput').val();
@@ -247,7 +230,6 @@ function RootVegetablesValidation() {
     } else {
         selected = true;
     }
-
     if(!selected) {
         $('#errortext').text('Please select at least one option').fadeIn(1000, function() {
             setTimeout(function() {
@@ -256,7 +238,6 @@ function RootVegetablesValidation() {
         });
         return false;
     }
-
     if(chekedAndInput) {
         $('#errortext').text('Please select only one option').fadeIn(1000, function() {
             setTimeout(function() {
@@ -270,7 +251,7 @@ function RootVegetablesValidation() {
         data: { rootitems: rootitems, kgValue: kgValue, gmValue: gmValue },
         url: baseurl + 'CustomPlanController/saveRootVegetables',
         success: function(data) {
-            var url = baseurl+'custom-plan-3'; 
+            var url = baseurl+'custom-plan-4'; 
 	        window.location.href=url;
         }
     });
@@ -294,7 +275,6 @@ function SquashVegetablesValidation() {
     } else {
         selected = true;
     }
-
     if(!selected) {
         $('#errortext').text('Please select at least one option').fadeIn(1000, function() {
             setTimeout(function() {
@@ -303,7 +283,6 @@ function SquashVegetablesValidation() {
         });
         return false;
     }
-
     if(chekedAndInput) {
         $('#errortext').text('Please select only one option').fadeIn(1000, function() {
             setTimeout(function() {
@@ -317,12 +296,11 @@ function SquashVegetablesValidation() {
         data: { squashitems: squashitems, kgValue: kgValue, gmValue: gmValue },
         url: baseurl + 'CustomPlanController/saveSquashVegetables',
         success: function(data) {
-            var url = baseurl+'custom-plan-4'; 
+            var url = baseurl+'custom-plan-5'; 
 	        window.location.href=url;
         }
     });
 }
-
 
 // Podded Vegetables Validation
 function PoddedVegetablesValidation() {
@@ -342,7 +320,6 @@ function PoddedVegetablesValidation() {
     } else {
         selected = true;
     }
-
     if(!selected) {
         $('#errortext').text('Please select at least one option').fadeIn(1000, function() {
             setTimeout(function() {
@@ -351,7 +328,6 @@ function PoddedVegetablesValidation() {
         });
         return false;
     }
-
     if(chekedAndInput) {
         $('#errortext').text('Please select only one option').fadeIn(1000, function() {
             setTimeout(function() {
@@ -365,7 +341,7 @@ function PoddedVegetablesValidation() {
         data: { poddeditems: poddeditems, kgValue: kgValue, gmValue: gmValue },
         url: baseurl + 'CustomPlanController/savePoddedVegetables',
         success: function(data) {
-            var url = baseurl+'custom-plan-5'; 
+            var url = baseurl+'custom_review'; 
 	        window.location.href=url;
         }
     });
@@ -378,7 +354,7 @@ function OtherVegetablesValidation() {
     let kgValue = $('#kgInput').val();
     let gmValue = $('#gmInput').val();
     let selected = false;
-    let chekedAndInput = false; 
+    let chekedAndInput = false; ;
 
     if(!dontNeedChecked && (!kgValue && !gmValue)) {
         $('#kgInput').css('border-color', 'red');
@@ -389,7 +365,6 @@ function OtherVegetablesValidation() {
     } else {
         selected = true;
     }
-
     if(!selected) {
         $('#errortext').text('Please select at least one option').fadeIn(1000, function() {
             setTimeout(function() {
@@ -398,7 +373,6 @@ function OtherVegetablesValidation() {
         });
         return false;
     }
-
     if(chekedAndInput) {
         $('#errortext').text('Please select only one option').fadeIn(1000, function() {
             setTimeout(function() {
@@ -407,13 +381,23 @@ function OtherVegetablesValidation() {
         });
         return false;
     }
+    var valuesArray = { otheritems: otheritems, kgValue: kgValue, gmValue: gmValue };
+    localStorage.setItem('customPlanData', valuesArray);
     $.ajax({
         type: 'POST',
         data: { otheritems: otheritems, kgValue: kgValue, gmValue: gmValue },
         url: baseurl + 'CustomPlanController/saveOtherVegetables',
         success: function(data) {
-            var url = baseurl+'custom-plan-final'; 
+            var url = baseurl+'custom-plan-2'; 
 	        window.location.href=url;
         }
     });
+// $.ajax({
+//     type: 'POST',
+//     data: valuesArray ,
+//     url: baseurl + 'CustomPlanController/saveOtherVegetables',
+//     success: function(data) {
+//         window.location.href = baseurl + 'custom_review';
+//     }
+// });
 }

@@ -1,54 +1,51 @@
-<html>
-    <head>
-       <title>Freshoo</title>
-       <meta name="description" content="">
-        <?php //include 'include/header.php' ?>
-        <link rel="stylesheet" href="<?= base_url('assets/css/sub-plan-screen.css')?>">
-    </head>
-   
-    <body>
-     <?php $selOfferId = $this->session->userdata('logged_offerDivId');
-      $cost = $this->session->userdata('logged_offerCost'); ?>
-    <div>
-<?php //include 'include/menu-sec.php' ?>
-</div>
+<link rel="stylesheet" href="<?= base_url('assets/css/sub-plan-screen.css')?>">
+<?php 
+
+    $selOfferId = $this->session->userdata('logged_offerDivId');
+    $cost = $this->session->userdata('logged_offerCost') ? $this->session->userdata('logged_offerCost') : '399'; 
+    $weight = $this->session->userdata('logged_plan_weight')? $this->session->userdata('logged_plan_weight') : '7';
+    $recommended = $this->session->userdata('logged_recommended')? $this->session->userdata('logged_recommended') : 'family 2+1';
+    $varieties = $this->session->userdata('logged_varieties')? $this->session->userdata('logged_varieties') : '15';
+
+?>
+
        <section class="plan-1">
            <div class="container">
-               <div class="row">
+               <div class="row align-items-center">
                   
                    <div class="col-md-3 col-6 order-2 order-md-1 text-center custom-plan">
-                     <img src="../assets/images/icon-399.png"  style="width:50px;"> 
+                     <img src="<?= base_url('assets/images/icon') ?>-<?=$cost?>.png"  style="height:60px;"> 
                    </div>
                    
                        <div class=" col-md-6 col-12 order-1 order-md-2 text-center pb-3 pt-3 plan-btns-1">
-                         <a href="" class="plan-btn">₹599</a>
-                         <a href="" class="plan-btn">₹799</a>
-                         <a href="" class="plan-btn">₹999</a>
-                         <a href="" class="plan-btn">Custom</a>
+                         <a href="" class="plan-btn selOfferDiv" varieties="15" data-id="1" recommended="family 2+1" plan-weight="7" plan-cost="399">₹399</a>
+                         <a href="" class="plan-btn selOfferDiv" varieties="17" data-id="2" recommended="family 4+1" plan-weight="11" plan-cost="599">₹599</a>
+                         <a href="" class="plan-btn selOfferDiv" varieties="17" data-id="3" recommended="family 4+2" plan-weight="17" plan-cost="799">₹799</a>
+                         <a href="" class="plan-btn selOfferDiv" varieties="17" data-id="4" recommended="large family" plan-weight="23" plan-cost="999">₹999</a>
+                         <a href="<?= base_url('custom-plan')?>" class="plan-btn">Custom</a>
                       </div>
                    
                    <div class="col-md-3 col-6 order-3 text-center plans">
                        <div class="plan-price-1 custom-plan ">
-                        <h3><span> ₹ 399 </span> </h3>
+                        <h3><span style="font-family: 'Arial';"> ₹</span><?=$cost?> </h3>
                        <p>Per Week, Billed Monthly</p>
                        </div>
                    </div>
                   
                </div>
-             
-
-      
            </div>
        </section> 
+	   
        <div class="container">
-        <div class="d-flex align-items-center justify-content-center text-center pt-4">
-                    <div class="custom-plan">
-                        <h2>15 Varieties of	<span>Vegetables</span></h2>
-                        <h5>(Approx Weight : 7kgs)</h5>
-                        <p>Experience the freshest and highest quality vegetables with our Plan 399. Perfectly designed for a family of 2+1 or more, this plan includes a diverse selection of 15 varieties of vegetables with a total approximate weight of 7 kgs. Enjoy the convenience of having fresh vegetables delivered to your doorstep every week.</p>
-                    </div>
-                </div> 
-</div>
+			<div class="d-flex align-items-center justify-content-center text-center pt-4">
+				<div class="custom-plan">
+					<h2><?=$varieties?> Varieties of	<span>Vegetables</span></h2>
+					<h5>(Approx Weight : <?=$weight?>kgs)</h5>
+					<p>Experience the freshest and highest quality vegetables with our Plan <?=$cost?>. Perfectly designed for a <?=$recommended?> or more, this plan includes a diverse selection of <?=$varieties?> varieties of vegetables with a total approximate weight of <?=$weight?> kgs. Enjoy the convenience of having fresh vegetables delivered to your doorstep every week.</p>
+				</div>
+			</div> 
+		</div>
+		
        <!-- subscribe-page-select-plan-1 -->
        <div class="margins-of-sec-1">
             <div class="container button-style-1 subscribe">
@@ -57,15 +54,9 @@
                    SUBSCRIBE NOW<p> and get one week free</p>
                 </button>
             </a>
-<!--
-            <a href="<?php echo base_url('') ?>#plan_calling" class="text-white text-decoration-none"> 
-                <button class="compare-button">
-                   Check <span>Other Plans</span>
-                </button>
-            </a>
--->
             </div>
         </div>
+		
      <section class="plan-padd">
          <div class="container mt-4">
             
@@ -174,6 +165,7 @@
            
          </div>
      </section>
+	 
      <section  class="plan-padd">
                 <div class="container mt-3">
                     <div class="d-flex align-items-center justify-content-center text-center">
@@ -275,6 +267,7 @@
             </div>
                 </div>
         </section>
+		
        <section  class="plan-padd">
             <div class="container mt-3">
                 
@@ -332,6 +325,7 @@
             </div>
             </div>
         </section>  
+		
         <section  class="plan-padd">
             <div class="container mt-3">
                 <div class="d-flex align-items-center justify-content-center text-center">
@@ -451,6 +445,7 @@
             </div>        
             </div>
         </section> 
+		
         <section  class="plan-padd">
             <div class="container mt-3">
                 <div class="d-flex align-items-center justify-content-center text-center">
@@ -502,14 +497,8 @@
                     <!-- Repeat the above card structure for the remaining cards -->
 
                 </div>
-
-                
-
-
-            
             </div>
-        </section>  
-       
+        </section>         
        
         <div class="margins-of-sec " >
             <div>
@@ -518,56 +507,7 @@
                         <div class="row">                  
                             <div class="col-md-6" >
                                 <!-- Text content -->
-                                <h2><span>Why Choose Plan 399?</span></h2>
-                               <!-- <div class="mt-4">
-                                    <div class="d-flex flex-row justify-content-start">
-                                        <i class='fa fa-check-circle why-icon-style'></i>
-                                        <p class="why-sec-content">Fresh Vegetables </p>
-                                    </div>
-                                    
-
-                                    <div class="d-flex flex-row justify-content-start">
-                                        <i class='fa fa-check-circle why-icon-style'></i>
-                                        <p class="why-sec-content">Cleaned and packed</p>
-                                    </div>
-
-                                  
-
-                                    <div class="d-flex flex-row justify-content-start">
-                                        <i class='fa fa-check-circle why-icon-style'></i>
-                                        <p class="why-sec-content">Free door delivery</p>
-                                    </div>
-
-                            
-
-                                    
-
-                                    <div class="d-flex flex-row justify-content-start">
-                                        <i class='fa fa-check-circle why-icon-style'></i>
-                                        <p class="why-sec-content">Lowest price in the town</p>
-                                    </div>
-
-                                    
-
-                                    <div class="d-flex flex-row justify-content-start">
-                                        <i class='fa fa-check-circle why-icon-style'></i>
-                                        <p class="why-sec-content">No surcharge no hidden charge</p>
-                                    </div>
-                                    
-
-                                    <div class="d-flex flex-row justify-content-start">
-                                        <i class='fa fa-check-circle why-icon-style'></i>
-                                        <p class="why-sec-content">100% quality guarentee</p>
-                                    </div>
-
-                                  
-                                            
-
-                                    <div class="d-flex flex-row justify-content-start">
-                                        <i class='fa fa-check-circle why-icon-style'></i>
-                                        <p class="why-sec-content">Cancel any time</p>
-                                    </div>
-                                </div>-->
+                                <h2><span>Why Choose Plan <?=$cost?>?</span></h2>
                                 
                         <div class="mt-4">
                            <div class="d-flex flex-row justify-content-start">
@@ -580,11 +520,11 @@
                           </div>
                           <div class="d-flex flex-row justify-content-start">
                              <i class='fa fa-check-circle why-icon-style'></i>
-                             <p class=""><b>Diverse Selection:</b> 15 varieties of vegetables to meet all your dietary needs.</p>
+                             <p class=""><b>Diverse Selection:</b> <?=$varieties?> varieties of vegetables to meet all your dietary needs.</p>
                           </div>
                           <div class="d-flex flex-row justify-content-start">
                              <i class='fa fa-check-circle why-icon-style'></i>
-                             <p class=""><b>Affordable Pricing:</b> FGet premium vegetables at an economical price of ₹399 per week, billed monthly.</p>
+                             <p class=""><b>Affordable Pricing:</b> Get premium vegetables at an economical price of ₹<?=$cost?> per week, billed monthly.</p>
                           </div>
                         </div>
                                 
@@ -602,104 +542,23 @@
                     </div>
                 </div>
             </div>
-        </div>
-             
-             
-        
-
-       <!-- accordions  -->
-
-<!--
-            <div class="accord-sec">
-                <div class="container">
-            
-                    <div id="accordion" class="pb-2">
-                    <h2>FAQ's</h2>
-                    
-                        <div class="card border-0 wow fadeInUp accord-inner">
-                            <div class="card-header p-0 border-0" id="heading-240">
-                                <button class="btn btn-link accordion-title border-0 collapsed" data-toggle="collapse" data-target="#collapse-240" aria-expanded="false" aria-controls="#collapse-240"><i class="fas fa-plus text-center d-flex align-items-center justify-content-center h-100"></i>Is there a 24/7 response for emergencies?                        </button>
-                            </div>
-                            <div id="collapse-240" class="collapse " aria-labelledby="heading-240" data-parent="#accordion">
-                                <div class="card-body accordion-body">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card accord-card border-0 wow fadeInUp accord-inner">
-                            <div class="card-header p-0 border-0" id="heading-241">
-                                <button class="btn btn-link accordion-title border-0 collapsed" data-toggle="collapse" data-target="#collapse-241" aria-expanded="false" aria-controls="#collapse-241"><i class="fas fa-plus text-center d-flex align-items-center justify-content-center h-100"></i>How are owners’ concerns handled?                        </button>
-                            </div>
-                            <div id="collapse-241" class="collapse " aria-labelledby="heading-241" data-parent="#accordion">
-                                <div class="card-body accordion-body">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card border-0 wow fadeInUp accord-inner">
-                            <div class="card-header p-0 border-0" id="heading-242">
-                                <button class="btn btn-link accordion-title border-0 collapsed" data-toggle="collapse" data-target="#collapse-242" aria-expanded="false" aria-controls="#collapse-242"><i class="fas fa-plus text-center d-flex align-items-center justify-content-center h-100"></i>How do I get repairs completed to my unit?                        </button>
-                            </div>
-                            <div id="collapse-242" class="collapse " aria-labelledby="heading-242" data-parent="#accordion">
-                                <div class="card-body accordion-body">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card border-0 wow fadeInUp accord-inner">
-                            <div class="card-header p-0 border-0" id="heading-243">
-                                <button class="btn btn-link accordion-title border-0 collapsed" data-toggle="collapse" data-target="#collapse-243" aria-expanded="false" aria-controls="#collapse-243"><i class="fas fa-plus text-center d-flex align-items-center justify-content-center h-100"></i>What are the duties of a property manager?                        </button>
-                            </div>
-                            <div id="collapse-243" class="collapse " aria-labelledby="heading-243" data-parent="#accordion">
-                                <div class="card-body accordion-body">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card border-0 wow fadeInUp accord-inner">
-                            <div class="card-header p-0 border-0" id="heading-244">
-                                <button class="btn btn-link accordion-title border-0 collapsed" data-toggle="collapse" data-target="#collapse-244" aria-expanded="false" aria-controls="#collapse-244"><i class="fas fa-plus text-center d-flex align-items-center justify-content-center h-100"></i>Do we receive copies of all invoices paid?                        </button>
-                            </div>
-                            <div id="collapse-244" class="collapse " aria-labelledby="heading-244" data-parent="#accordion">
-                                <div class="card-body accordion-body">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card border-0 wow fadeInUp accord-inner">
-                            <div class="card-header p-0 border-0" id="heading-245">
-                                <button class="btn btn-link accordion-title border-0 collapsed" data-toggle="collapse" data-target="#collapse-245" aria-expanded="false" aria-controls="#collapse-245"><i class="fas fa-plus text-center d-flex align-items-center justify-content-center h-100"></i>How are arrears handled?                        </button>
-                            </div>
-                            <div id="collapse-245" class="collapse " aria-labelledby="heading-245" data-parent="#accordion">
-                                <div class="card-body accordion-body">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                
-                </div>
-            </div>
--->
+        </div>             
 
             <div>
               <div class="col-12 text-center">
-                  <h3><b>Start enjoying fresh, nutritious vegetables with Plan 399 today!</b></h3>
+                  <h3>Start enjoying fresh, nutritious vegetables with Plan <?=$cost?> today!</h3>
               </div>
                 
 
-                <div class="container button-style-1 mt-4 mb-4">
-                    <a id="create-custom-plan" style="cursor:pointer;"  class="create-plan-button text-white text-decoration-none">  Create Your Own Plan<p> Minimum Value ₹1000 per Week</p></a>                   
-<!--                    <a  class="new-compare text-center padding-top-compare text-white text-decoration-none"> Compare Plans</a>-->
+                <div class="container button-style-1 mt-4 mb-4 pb-3">
+                    <a href="<?= base_url('custom-plan')?>" class="create-plan-button text-white text-decoration-none">  Create Your Own Plan<p> Minimum Value ₹1000 per Week</p></a> 
                     
                 </div>
             </div>
 
-
-
         <!-- footer above section  -->
              <div class="footer-above-sec" id="contact_calling">
-            <div class="mb-2">
+            <div>
                 <div class="container">
                     <div class="d-flex flex-row">  
                         <div>                                       
@@ -720,52 +579,43 @@
                 </div>
             </div>
         </div>
-
-<!--
-        <div class="footer-above-sec">
-            <div class="mb-2">
-                <div class="container">
-                    <div class="d-flex flex-row">  
-                        <div>                                       
-
-                            <img src="<?= base_url('assets/images/footer2.png')?>" alt="Desktop Image" class="desktop-image pt-4">
-                            <img src="<?= base_url('assets/images/footer-phn.png')?>" alt="Mobile Image" class="mobile-image">                             
-                        </div>  
-                        <div class="footer-above-cont">              
-                            <div class="d-flex flex-column align-items-center justify-content-center">
-                            
-                                <h2>Subscribe Now </h2> 
-                                <h3>Get One Week</h3> 
-                                <h1>FREE</h1>   
-                                <button class="click-here-btn">Click Here</button>   
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>  
--->
-        <?php //include 'include/footer-main.php' ?>
-        
-    </body>
-    <script>
+		
+<script>
     var acc = document.getElementsByClassName("accordion");
-var i;
+    var i;
 
-for (i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", function() {
-    /* Toggle between adding and removing the "active" class,
-    to highlight the button that controls the panel */
-    this.classList.toggle("active");
-
-    /* Toggle between hiding and showing the active panel */
-    var panel = this.nextElementSibling;
-    if (panel.style.display === "block") {
-      panel.style.display = "none";
-    } else {
-      panel.style.display = "block";
+    for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function() {
+        /* Toggle between adding and removing the "active" class,
+        to highlight the button that controls the panel */
+        this.classList.toggle("active");
+        /* Toggle between hiding and showing the active panel */
+        var panel = this.nextElementSibling;
+        if (panel.style.display === "block") {
+        panel.style.display = "none";
+        } else {
+        panel.style.display = "block";
+        }
+    });
     }
-  });
-}
+
+    var loggedOfferCost = <?php echo json_encode($cost); ?>;
+    document.addEventListener("DOMContentLoaded", function() {
+        var plans = document.querySelectorAll('.plan-btn.selOfferDiv');
+        
+        plans.forEach(function(plan) {
+            var planCost = plan.getAttribute('plan-cost');
+            
+            if (loggedOfferCost == 399 && (planCost == 399)) {
+                plan.style.display = 'none';
+            } else if (loggedOfferCost == 599 && (planCost == 599)) {
+                plan.style.display = 'none';
+            } else if (loggedOfferCost == 799 && (planCost == 799)) {
+                plan.style.display = 'none';
+            }else if (loggedOfferCost == 999 && (planCost == 999)) {
+                plan.style.display = 'none';
+            }
+        });
+    });
+
 </script>
-</html>

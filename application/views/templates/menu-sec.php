@@ -2,7 +2,7 @@
 
 <style>
     .head-sec {
-        background-image: linear-gradient(to right, #FB3614 , #FF7F40) !important;
+            box-shadow: 0px 0px 5px #c7c7c7;
         position: inherit !important;
        
     }
@@ -76,10 +76,6 @@
         </div>
     </div>
 </div>
-
-
-
-
 <script>
     
 $('.navlink-close').click(function(){

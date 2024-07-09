@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
         <meta content="Premium Multipurpose Admin & Dashboard Template" name="description" />
         <meta content="Themesdesign" name="author" />
-
+        <link rel="shortcut icon" href="<?= base_url('assets/images/favicon.png')?>" type="image/x-icon">
         {_meta}
 		<!-- page title specific to the page -->
         <title>{title}</title>
@@ -16,6 +16,7 @@
 <link rel="stylesheet" href="<?= base_url('assets/css/animate.css') ?>">
 <link rel="stylesheet" href="<?= base_url('assets/aos/aos.css') ?>">
 <link rel="stylesheet" href="<?= base_url('assets/css/style.css') ?>">
+<link href="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/css/swiffy-slider.min.css" rel="stylesheet">
 
 <!-- Fonts -->
 <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
@@ -26,7 +27,7 @@
 <script src="<?= base_url('assets/js/jquery.js') ?>"></script>
 <!-- <script src="<?= base_url('assets/aos/aos.js') ?>"></script> -->
 <script src="<?= base_url('assets/js/popper.js') ?>"></script>
-<!-- <script src="<?= base_url('assets/js/script.js') ?>"></script> -->
+<script src="<?= base_url('assets/js/script.js') ?>"></script>
 <script src="<?= base_url('assets/bootstrap/js/bootstrap.js') ?>"></script>
 <script src="<?= base_url('assets/bootstrap/js/bootstrap.bundle.min.js') ?>"></script>
 
@@ -36,6 +37,7 @@
 <!-- jQuery -->
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/js/swiffy-slider.min.js"></script>
 
 <!-- Bootstrap JS -->
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>

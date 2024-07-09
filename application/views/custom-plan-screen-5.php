@@ -5,12 +5,11 @@
     <meta name="description" content="">
     <?php //include 'include/header.php' ?>
 </head>
-<body style="background-color: #f4f4f4;">
+<body style="backgorund-color:hsl(0deg 0% 95.69%)">
 <div>
 <?php //include 'include/menu-sec.php' ?>
 </div>
-    
-    <style>
+        <style>
          @media(max-width:768px){.plan-padd{padding: 5px;}}
     
     </style>
@@ -42,88 +41,46 @@
 
     <div class="d-flex align-items-center justify-content-center text-center">
         <div class="custom-plan">
-            <h2>Other <span>Vegetables</span></h2>
-            <p>Eating vegetables provides essential vitamins, minerals, and dietary fiber necessary for overall health, immunity, and disease prevention.</p>
+            <h2>Podded <span>Vegetables</span></h2>
+            <p>Podded vegetables are rich in protein, fiber, and essential nutrients, supporting muscle health and digestion.</p>
         </div>
     </div>
 
     
-    <div class="row mt-2 mb-4 plan-padd">
-
-    
+    <div class="row mt-2 plan-padd">
         <div class="col-3 col-md-3 card-pd-style">
             <div class="card border-0 shadow-lg bg-white border-radius-style">
                 <div class="padding-tex">
-                    <p class="card-title text-center">Cabbage</p>
+                    <p class="card-title text-center">Peas</p>
                 </div>
-                <img src="<?= base_url('assets/images/Cabbage.png')?>" class="card-img-bottom" alt="Image 1">
+                <img src="<?= base_url('assets/images/plan-a-screen/peas.png')?>" class="card-img-bottom" alt="Image 1">
             </div>
         </div>
 
         <div class="col-3 col-md-3 card-pd-style">
             <div class="card border-0 shadow bg-white border-radius-style">
                 <div class="padding-tex">
-                    <p class="card-title text-center">Cauliflower</p>
+                    <p class="card-title text-center">White Beans</p>
                 </div>
-                <img src="<?= base_url('assets/images/Cauliflower.png')?>" class="card-img-bottom" alt="Image 2">
+                <img src="<?= base_url('assets/images/plan-a-screen/white-beans.png')?>" class="card-img-bottom" alt="Image 2">
             </div>
         </div>
 
         <div class="col-3 col-md-3 card-pd-style">
             <div class="card border-0 shadow bg-white border-radius-style">
                 <div class="padding-tex">
-                    <p class="card-title text-center">Brinjal</p>
+                    <p class="card-title text-center">Hyacinth</p>
                 </div>
-                <img src="<?= base_url('assets/images/Brinjal.png')?>" class="card-img-bottom" alt="Image 2">
+                <img src="<?= base_url('assets/images/plan-a-screen/hyacinth-beans.png')?>" class="card-img-bottom" alt="Image 2">
             </div>
         </div>
 
         <div class="col-3 col-md-3 card-pd-style">
             <div class="card border-0 shadow bg-white border-radius-style">
                 <div class="padding-tex">
-                    <p class="card-title text-center">Black Eggplant</p>
+                    <p class="card-title text-center">Long Beans</p>
                 </div>
-                <img src="<?= base_url('assets/images/Black Eggplant.png')?>" class="card-img-bottom" alt="Image 2">
-            </div>
-        </div>
-
-        <!-- Repeat the above card structure for the remaining cards -->
-
-    </div>
-    <div class="row mt-2">
-        <div class="col-3 col-md-3 card-pd-style">
-            <div class="card border-0 shadow-lg bg-white border-radius-style">
-                <div class="padding-tex">
-                    <p class="card-title text-center">Raw Banana</p>
-                </div>
-                <img src="<?= base_url('assets/images/Raw Banana.png')?>" class="card-img-bottom" alt="Image 1">
-            </div>
-        </div>
-
-        <div class="col-3 col-md-3 card-pd-style">
-            <div class="card border-0 shadow bg-white border-radius-style">
-                <div class="padding-tex">
-                    <p class="card-title text-center">Okra</p>
-                </div>
-                <img src="<?= base_url('assets/images/Okra.png')?>" class="card-img-bottom" alt="Image 2">
-            </div>
-        </div>
-
-        <div class="col-3 col-md-3 card-pd-style">
-            <div class="card border-0 shadow bg-white border-radius-style">
-                <div class="padding-tex">
-                    <p class="card-title text-center">Ivy Gourd</p>
-                </div>
-                <img src="<?= base_url('assets/images/Ivy Gourd.png')?>" class="card-img-bottom" alt="Image 2">
-            </div>
-        </div>
-
-        <div class="col-3 col-md-3 card-pd-style">
-            <div class="card border-0 shadow bg-white border-radius-style">
-                <div class="padding-tex">
-                    <p class="card-title text-center">Drumstick</p>
-                </div>
-                <img src="<?= base_url('assets/images/Drumstick.png')?>" class="card-img-bottom" alt="Image 2">
+                <img src="<?= base_url('assets/images/plan-a-screen/long-beans.png')?>" class="card-img-bottom" alt="Image 2">
             </div>
         </div>
 
@@ -135,12 +92,12 @@
 
     <div class="row mb-2 mt-4">
         <div class="col-9 col-md-10 custom-plan">
-            <p>How many Other veggie varieties you need per week</p>
+            <p>How many Podded veggie varieties you need per week</p>
         </div>
         <div class="col-3 col-md-2" style="padding: 0 14px;">
-            <select class="form-select" id="Selectothervegetable" name="leave_type" required="">
+            <select class="form-select" id="Selectpoddedvegetable" name="leave_type" required="">
                
-                <option value="1">1</option>
+            <option value="1">1</option>
                 <option value="2">2</option>
                 <option value="3">3</option>
                 <option value="4">4</option>
@@ -163,8 +120,8 @@
                     oninput="this.value = this.value.replace(/[^0-9]/g, '').slice(0, 2)"
                     maxlength="3"
                     oninput="this.style.borderColor = ''"
-                    id = "kgInput"
-                    >       
+                    id="kgInput"
+                    >
             </div>
         </div>
         <div class="col-2 col-md-1">
@@ -174,8 +131,8 @@
                     oninput="this.value = this.value.replace(/[^0-9]/g, '').slice(0, 3)"
                     maxlength="3"
                     oninput="this.style.borderColor = ''"
-                    id = "gmInput"
-                >
+                    id="gmInput"
+                    >
             </div>
         </div>
     </div>
@@ -183,10 +140,10 @@
     <div class="margins-of-sec">
     <p id="errortext" style="color:red;display:flex;justify-content: center;"></p><br>
         <div class="container button-style-1 mt-3 mb-4">
-            <a href="<?= base_url('custom-plan-4')?>" class="text-white text-decoration-none mr-1">
+            <a href="<?= base_url('custom-plan-3')?>" class="text-white text-decoration-none mr-1">
             <button class="btn create-plan-button prev-btn-style">PREVIOUS</button></a>
-            <a id="custom_review" style="cursor:pointer;" class="text-white text-decoration-none">
-            <button onclick ="OtherVegetablesValidation()" class="btn create-plan-button prev-btn-style">NEXT</button></a>
+            <a id="custom-plan-5" style="cursor:pointer;" class="text-white text-decoration-none">
+            <button onclick = "PoddedVegetablesValidation()" class="btn create-plan-button prev-btn-style">NEXT</button></a>
         </div>
     </div>
 </div>

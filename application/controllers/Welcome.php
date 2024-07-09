@@ -21,10 +21,9 @@ class Welcome extends MY_Controller {
 	 */
     function __construct() {
         parent::__construct();
-        $this->template->write_view('header', 'templates/header');
-        $this->template->write_view('footer', 'templates/footer-main');
+        $this->template->write_view('footer', 'templates/footer');
         $this->template->add_js('assets/js/script.js');
-        $this->template->write('title', 'Freshoo', TRUE);
+        $this->template->write('title', '5amfresh', TRUE);
         $this->postVals = $this->input->post();
         $this->load->model('UserModel');
         $this->load->library('session');
@@ -48,7 +47,9 @@ class Welcome extends MY_Controller {
        {
         $selOfferId = $_POST['seloffer'];
         $offerCost = $_POST['offerCost'];
-        $response = $this->UserModel->saveSelOffer($selOfferId ,$offerCost );
+        $recommended = $_POST['recommended'];
+        $plan_weight = $_POST['plan_weight'];
+        $response = $this->UserModel->saveSelOffer($selOfferId ,$offerCost ,$recommended,$plan_weight , $varieties );
 
 			  echo "Response: " . json_encode($response);
       }else {

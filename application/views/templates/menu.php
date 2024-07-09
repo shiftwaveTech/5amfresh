@@ -9,12 +9,8 @@
             <div class="row">
                <div class="col-7 col-lg-3">
                    <div class="logo">
-                       <a href="index.php"><img src="<?= base_url('assets/images/logo.png') ?>" alt="Birth Right by Rainbow Hospitals"></a>
-<!--                       <span class="vizag-text">Vizag</span>-->
+                       <a href="index.php"><img src="<?= base_url('assets/images/logo.png') ?>" alt="5am Fresh"></a>
                     </div>
-                  
-                    
-                   
                </div>
                 <div class="col-9 d-none d-lg-block">
                     <div class="nav-bar">
@@ -37,27 +33,6 @@
         </div>
     </div>
 </header>
-  
-
-<!--      Mobile Menu Modal -->
-
-<!-- <div class="modal mobMenu animate__animated animate__slideInLeft" id="mob-menu">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-body">  
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><i class="fas fa-times"></i></button>
-                <div class="nav-bar">
-                   <div class="link-1"><a href="" class="navlink navlink-close">About</a></div>
-                   <div class="link-1"><a href="" class="navlink navlink-close">Plans</a></div>
-                   <div class="link-1"><a href="" class="navlink navlink-close">Contact</a></div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div> -->
-
-
-
 
 <script>
     
@@ -67,8 +42,7 @@ $('.navlink-close').click(function(){
 
 $('#menu-toggle4').click(function(){
 $('#menu4').toggle();
-}) 
-    
+})     
     
 
 </script>

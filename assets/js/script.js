@@ -1,16 +1,23 @@
-var baseurl = 'http://localhost/Freshoo/';
-// var baseurl = 'http://52.9.131.111/mockups/des-12/freshoo/';
+var baseurl = 'http://localhost/5amfresh/';
 
-
+$(document).on('click', '#create-custom-plan', function(){
+    var url = baseurl + 'custom-plan'; 
+    window.location.href = url;
+});
 var offerDivId = '';
 var offerCost = '';
-
+var recommended = '';
+var plan_weight = '';
+var varieties = '';
 $(document).on('click', '.selOfferDiv', function(){
     offerDivId = $(this).attr('data-id');
     offerCost = $(this).attr('plan-cost');
+    recommended = $(this).attr('recommended');
+    plan_weight = $(this).attr('plan-weight');
+    varieties = $(this).attr('varieties');
 	$.ajax({
 			type: 'POST',
-			data: {seloffer : offerDivId , offerCost : offerCost},
+			data: {seloffer : offerDivId , offerCost : offerCost, recommended : recommended , plan_weight : plan_weight , varieties : varieties},
 			url: baseurl+'welcome/userSelOffer', 
 			success:function(data){
 				console.log(data);
@@ -363,6 +370,44 @@ function saveUserData(response, paymentDetails){
         }
     });
 }
+
+// index page script
+
+$('.navlink-close').click(function(){
+    $('.btn-close').trigger('click');
+} )  
+
+$('#menu-toggle4').click(function(){
+$('#menu4').toggle();
+}) 
+
+$(document).ready(function() {
+    var owl = $('.banner-carousel');
+    owl.owlCarousel({
+      loop: true,
+      margin: 10,
+      responsiveClass:true,
+      autoplay:true,
+      autoplayTimeout:5000,
+      autoplayHoverPause:true,
+responsive:{
+0:{
+  items:1,
+  nav:true
+},
+600:{
+  items:1,
+  nav:true
+},
+1000:{
+  items:1,
+  nav:true,
+  loop:true
+}
+}
+    });
+    
+  })
 
 
 

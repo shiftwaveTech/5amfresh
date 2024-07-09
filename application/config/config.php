@@ -25,7 +25,8 @@ date_default_timezone_set('Asia/Kolkata');
 | a PHP script and you can easily do that on your own.
 |
 */
-$config['base_url'] = 'http://192.168.0.129/Freshoo/';
+$config['base_url'] = 'http://localhost/5amfresh/';
+
 
 /*
 |--------------------------------------------------------------------------
@@ -225,7 +226,7 @@ $config['allow_get_array'] = TRUE;
 | your log files will fill up very fast.
 |
 */
-$config['log_threshold'] = 1;
+$config['log_threshold'] = 0;
 
 /*
 |--------------------------------------------------------------------------
@@ -382,8 +383,11 @@ $config['encryption_key'] = '';
 $config['sess_driver'] = 'files';
 $config['sess_cookie_name'] = 'ci_session';
 $config['sess_expiration'] = 7200;
-//$config['sess_save_path'] = 'ci_sessions';
-$config['sess_save_path'] = BASEPATH  . 'cache/';
+//$config['sess_save_path'] = 'temp';
+$config['sess_save_path'] = APPPATH . 'cache/ci_sessions';
+//$config['sess_save_path'] = BASEPATH  . 'cache/';
+//$config['sess_save_path'] = APPPATH . 'cache/session/';
+//$config['sess_save_path'] = 'C:\Windows\temp';
 $config['sess_match_ip'] = FALSE;
 $config['sess_time_to_update'] = 300;
 $config['sess_regenerate_destroy'] = FALSE;

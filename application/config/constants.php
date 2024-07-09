@@ -91,7 +91,8 @@ defined('USER_SUSPEND')        OR define('USER_SUSPEND', 2); // Activation statu
 defined('USER_INPROGRESS')     OR define('USER_INPROGRESS', 3); // Activation status
 defined('USER_DELETED')        OR define('USER_DELETED', 4); // Activation status
 defined('USER_LOGIN_STATUS')   OR define('USER_LOGIN_STATUS', 1); // Activation status
-defined('FROM_EMAIL')          OR define('FROM_EMAIL', 'support@shiftwave.com'); // Activation status
+// defined('FROM_EMAIL')          OR define('FROM_EMAIL', 'support@cloudlgs.com'); // Activation status
+defined('FROM_EMAIL')          OR define('FROM_EMAIL', 'hemant@shiftwave.com'); // Activation status
 defined('FROM_EMAIL_TEXT')        OR define('FROM_EMAIL_TEXT', 'Shiftwave Support'); // Activation status
-defined('SITE_NAME')           OR define('SITE_NAME', 'Shiftwave'); // Activation status
+defined('SITE_NAME')           OR define('SITE_NAME', 'Shiftwave Support'); // Activation status
 defined('SUPPORT_EMAIL')       OR define('SUPPORT_EMAIL', 'hemant@shiftwave.com'); // Activation status

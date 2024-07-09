@@ -11,10 +11,13 @@ class UserModel extends CI_Model {
         return $query->result();
     }
 
-    public function saveSelOffer($selOfferId,$offerCost){
+    public function saveSelOffer($selOfferId,$offerCost ,$recommended,$plan_weight , $varieties){
         if($selOfferId){   
             $this->session->set_userdata('logged_offerDivId', $selOfferId);
             $this->session->set_userdata('logged_offerCost', $offerCost);
+            $this->session->set_userdata('logged_recommended', $recommended);
+            $this->session->set_userdata('logged_plan_weight', $plan_weight);
+            $this->session->set_userdata('logged_varieties', $varieties);
             return ['status'=>'success','message'=>'Offer ID saved successfully.']; 
         } else {
             return ['status'=>'error','message'=>'Invalid offer ID.']; 
