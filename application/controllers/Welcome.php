@@ -56,24 +56,13 @@ class Welcome extends MY_Controller {
       }
     }
 
-    // public function subscribe(){
-    //   $this->template->write_view('menu', 'templates/menu-sec');
-    //   $this->data['results'] = $this->UserModel->get_data();     
-    //   $this->template->write_view('content', 'subscribe-page-select-plan-1',$this->data);
-    //   $this->template->render();	
-    // }
-
-    public function subscribe() {
+    public function subscribe(){
       $this->template->write_view('menu', 'templates/menu-sec');
-      $this->template->write_view('content', 'subscribe-page-select-plan-1');
-      $this->template->render();
-  }
+      $this->data['results'] = $this->UserModel->get_data();     
+      $this->template->write_view('content', 'subscribe-page-select-plan-1',$this->data);
+      $this->template->render();	
+    }
 
-  public function get_user_data() {
-      $mobile = $this->input->post('mobile');
-      $data = $this->UserModel->get_data_by_mobile($mobile);
-      echo json_encode($data);
-  }
     public function verifyOTP() {
       $post_values = $this->input->post();
       $response = $this->UserModel->saveUserDetails($post_values);
@@ -133,6 +122,32 @@ class Welcome extends MY_Controller {
 
       echo json_encode($response);
   }
-   
+    
+    //designers new work
+    public function faqs(){
+        $this->template->write_view('menu', 'templates/menu-sec');
+        $this->template->write_view('content', 'faq');
+        $this->template->render();
+    }
+    public function shipping(){
+        $this->template->write_view('menu', 'templates/menu-sec');
+        $this->template->write_view('content', 'shipping');
+        $this->template->render();
+    }
+      public function terms(){
+        $this->template->write_view('menu', 'templates/menu-sec');
+        $this->template->write_view('content', 'terms');
+        $this->template->render();
+    }
+     public function privacy_policy(){
+        $this->template->write_view('menu', 'templates/menu-sec');
+        $this->template->write_view('content', 'privacy-policy');
+        $this->template->render();
+    }
+     public function refund_policy(){
+        $this->template->write_view('menu', 'templates/menu-sec');
+        $this->template->write_view('content', 'refund-policy');
+        $this->template->render();
+    }
 }
 ?>

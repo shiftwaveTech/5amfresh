@@ -24,6 +24,7 @@
     }
 </style>
 
+
 <header class="head-sec">
 
 <!--    Desktop Menu-->
@@ -33,7 +34,7 @@
             <div class="row">
                <div class="col-7 col-lg-3">
                    <div class="logo">
-                       <a href="<?php echo base_url('') ?>"><img src="<?= base_url('assets/images/logo.png')?>" alt="Birth Right by Rainbow Hospitals"></a>
+                       <a href="<?php echo base_url('') ?>"><img src="<?= base_url('assets/images/logo-2.png')?>" alt="Birth Right by Rainbow Hospitals"></a>
                    </div>
                </div>
                 <div class="col-9 d-none d-lg-block">

@@ -101,7 +101,7 @@
     <div class="container mt-4">
         <div class="d-flex align-items-center justify-content-center text-center">
             <div class="custom-plan">
-                <h2>Pick a <span> Day</span></h2>
+                <h2>Pick a <span> Day Page</span></h2>
                 <p class="text-dark">Choose a specific day of the week, and  we will ensure weekly deliveries on your selected day.</p>
             </div>
         </div>
@@ -165,6 +165,10 @@
     </div> -->
 
     <div class="filter-container">
+         <div class="custom-plan" style="text-align:center;">
+                 <h3>Choose Your Preferred Delivery Day</h3>
+                <p>Choose a specific day of the week, and we will ensure that you receive fresh weekly vegetables on your selected day.</p>
+            </div>
         <div class="row justify-content-center">
             <label class="col-3 icon-text">
                 <input type="radio" name="day" value="Monday"> <p class="days" id="Monday">Monday</p>
@@ -228,89 +232,97 @@
                 </a>
                 </div>
             </div>
-
-      
-
-        
-        
-       
         </div>
-    </div>
 </section>
 
 
-
-        <div class="margins-of-sec">
-            <div>
+<div class="fresh-bg d-none d-md-block mt-3">
                 <div class="why-freshoo">
-                    <div class="container">
-                        <div class="row">                  
-                            <div class="col-md-5">
+                    <div class="container-fulid">
+                        <div class="row align-items-center">                  
+                            <div class="col-md-6">
+                                <div class="exper-content">
                                 <!-- Text content -->
-                                <h2>Why <span>Freshoo ?</span></h2>
-                                <div class="mt-4">
-                                    <div class="d-flex flex-row justify-content-start">
-                                        <i class='fa fa-check-circle why-icon-style'></i>
-                                        <p class="why-sec-content">Fresh Vegetables </p>
-                                    </div>
-                                    <!-- icon 1  -->
-
-                                    <div class="d-flex flex-row justify-content-start">
-                                        <i class='fa fa-check-circle why-icon-style'></i>
-                                        <p class="why-sec-content">Cleaned and packed</p>
-                                    </div>
-
-                                    <!-- icon 2  -->
-
-                                    <div class="d-flex flex-row justify-content-start">
-                                        <i class='fa fa-check-circle why-icon-style'></i>
-                                        <p class="why-sec-content">Free door delivery</p>
-                                    </div>
-
-                            
-
-                                    <!-- icon 3  -->
-
-                                    <div class="d-flex flex-row justify-content-start">
-                                        <i class='fa fa-check-circle why-icon-style'></i>
-                                        <p class="why-sec-content">Lowest price in the town</p>
-                                    </div>
-
-                                    <!-- icon 4  -->
-
-                                    <div class="d-flex flex-row justify-content-start">
-                                        <i class='fa fa-check-circle why-icon-style'></i>
-                                        <p class="why-sec-content">No surcharge no hidden charge</p>
-                                    </div>
-                                    <!-- icon 5 -->
-
-                                    <div class="d-flex flex-row justify-content-start">
-                                        <i class='fa fa-check-circle why-icon-style'></i>
-                                        <p class="why-sec-content">100% quality guarentee</p>
-                                    </div>
-
-                                    <!-- icon 6 -->
-                                            
-
-                                    <div class="d-flex flex-row justify-content-start">
-                                        <i class='fa fa-check-circle why-icon-style'></i>
-                                        <p class="why-sec-content">Cancel any time</p>
-                                    </div>
-                                </div>
+                                <h2 class="heading2">The 5am Fresh <br class="d-none d-md-block">Experience</h2>
+                                    <div class="icon-content-1">
+                                        <div class="icon-exp">
+                                            <img src="./assets/images/on-time.png">
+                                            <p>Procured <br>5am Daily</p>
+                                        </div>
+                                         <div class="icon-exp">
+                                            <img src="./assets/images/doorstep.png">
+                                           <p>Delivered to<br> Doorstep (Free)</p>
+                                        </div>
+                                         <div class="icon-exp">
+                                            <img src="./assets/images/quality-1.png">
+                                           <p>100% Cleaned<br> and packed</p>
+                                        </div>
+                                         <div class="icon-exp">
+                                            <img src="./assets/images/live.png">
+                                            <p>Live a Healthy<br> Lifestyle</p>
+                                        </div>
+                                         <div class="icon-exp">
+                                            <img src="./assets/images/ethcial.png">
+                                             <p>Ethical<br> Sourcing</p>
+                                        </div>
+                                        <div class="icon-exp">
+                                            <img src="./assets/images/price.png">
+                                             <p>Lowest<br> Price</p>
+                                        </div>
+<!--
+                                        <div class="icon-exp" >
+                                            <img src="./assets/images/live.png">
+                                             <p class="why-sec-content">No GST, No Packing Charges, No Handling Charges you just pay for vegetables</p>
+                                        </div>
+-->
+                                      </div>  
+                                        
+                                    </div>        
+                              
                             </div>
-                            <div class="col-md-7">
-                    
-            
+                            <div class="col-md-6">
                                 <!-- Image -->
-                                    <img src="<?= base_url('assets/images/why-img.png')?>" alt="Responsive Image" class="why-container-side-img">
+                                    <img src="https://www.5amfresh.com/assets/images/exper-fresh.jpg" alt="Responsive Image" class="container-side-img">
                             
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+        <div>
+            <div class="exper-content d-md-none">
+                                <!-- Text content -->
+              <h2 class="heading2">The 5am Fresh <br>Experience</h2>
+                                    <div class="icon-content-1">
+                                        <div class="icon-exp">
+                                            <img src="./assets/images/on-time.png">
+                                            <p class="why-sec-content">Procured 5am Daily</p>
+                                        </div>
+                                         <div class="icon-exp">
+                                            <img src="./assets/images/doorstep.png">
+                                           <p class="why-sec-content">Delivered to Doorstep (Free)</p>
+                                        </div>
+                                         <div class="icon-exp">
+                                            <img src="./assets/images/quality-1.png">
+                                           <p class="why-sec-content">100% Cleaned and packed</p>
+                                        </div>
+                                         <div class="icon-exp">
+                                            <img src="./assets/images/live.png">
+                                            <p class="why-sec-content">Live a Healthy Lifestyle</p>
+                                        </div>
+                                         <div class="icon-exp">
+                                            <img src="./assets/images/ethcial.png">
+                                             <p class="why-sec-content">Ethical Sourcing</p>
+                                        </div>
+                                        <div class="icon-exp">
+                                            <img src="./assets/images/price.png">
+                                             <p class="why-sec-content">Lowest Price</p>
+                                        </div>
+                                      </div>  
+                                        
+                                    </div>                   
+            
         </div>
-
         
         <div class="accord-sec">
             <div class="container">
@@ -329,64 +341,62 @@
                     </div> -->
                     <div class="card border-0 wow fadeInUp accord-inner">
                         <div class="card-header p-0 border-0" id="heading-240">
-                            <button class="btn btn-link accordion-title border-0 collapsed" data-toggle="collapse" data-target="#collapse-240" aria-expanded="false" aria-controls="#collapse-240"><i class="fas fa-plus text-center d-flex align-items-center justify-content-center h-100"></i>Is there a 24/7 response for emergencies?                        </button>
+                            <button class="btn btn-link accordion-title border-0 collapsed" data-toggle="collapse" data-target="#collapse-240" aria-expanded="false" aria-controls="#collapse-240"><i class="fas fa-plus text-center d-flex align-items-center justify-content-center h-100"></i>What are the different weekly plans available at 5am Fresh? </button>
                         </div>
                         <div id="collapse-240" class="collapse " aria-labelledby="heading-240" data-parent="#accordion">
                             <div class="card-body accordion-body">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                <p>At 5am Fresh, we offer four weekly plans:</p>
+                                    <ol>
+                                        <li> ₹399 per week: Includes 15 varieties of vegetables totaling 7kgs, recommended for a family of 2+1</li>
+                                        <li> ₹599 per week: Includes 17 varieties of vegetables totaling 11kgs, recommended for a family of 2+2.</li>
+                                        <li> ₹799 per week: Includes 17 varieties of vegetables totaling 17kgs, recommended for a family of 4+2.</li>
+                                        <li>₹999 per week: Includes 17 varieties of vegetables totaling 23kgs, recommended for large families.</li>
+                                    </ol>                                    
+                                    <p>Total weights are approximate.</p>
                             </div>
                         </div>
                     </div>
                     <div class="card accord-card border-0 wow fadeInUp accord-inner">
                         <div class="card-header p-0 border-0" id="heading-241">
-                            <button class="btn btn-link accordion-title border-0 collapsed" data-toggle="collapse" data-target="#collapse-241" aria-expanded="false" aria-controls="#collapse-241"><i class="fas fa-plus text-center d-flex align-items-center justify-content-center h-100"></i>How are owners’ concerns handled?                        </button>
+                            <button class="btn btn-link accordion-title border-0 collapsed" data-toggle="collapse" data-target="#collapse-241" aria-expanded="false" aria-controls="#collapse-241"><i class="fas fa-plus text-center d-flex align-items-center justify-content-center h-100"></i>Can I choose the vegetables in my delivery?</button>
                         </div>
                         <div id="collapse-241" class="collapse " aria-labelledby="heading-241" data-parent="#accordion">
                             <div class="card-body accordion-body">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                <p>No, customers do not select specific vegetables. We pack the vegetables according to the chosen plan and deliver them on the selected day. You can change your delivery day up to one day before your scheduled delivery.</p>
                             </div>
                         </div>
                     </div>
                     <div class="card border-0 wow fadeInUp accord-inner">
                         <div class="card-header p-0 border-0" id="heading-242">
-                            <button class="btn btn-link accordion-title border-0 collapsed" data-toggle="collapse" data-target="#collapse-242" aria-expanded="false" aria-controls="#collapse-242"><i class="fas fa-plus text-center d-flex align-items-center justify-content-center h-100"></i>How do I get repairs completed to my unit?                        </button>
+                            <button class="btn btn-link accordion-title border-0 collapsed" data-toggle="collapse" data-target="#collapse-242" aria-expanded="false" aria-controls="#collapse-242"><i class="fas fa-plus text-center d-flex align-items-center justify-content-center h-100"></i>What if I need a custom vegetable plan?</button>
                         </div>
                         <div id="collapse-242" class="collapse " aria-labelledby="heading-242" data-parent="#accordion">
                             <div class="card-body accordion-body">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                            <p>Customers with special requirements can create a custom plan with a weekly value exceeding ₹1000. In this plan, you can choose the number of varieties and weight from each category, and the price will be calculated accordingly.</p>
                             </div>
                         </div>
                     </div>
                     <div class="card border-0 wow fadeInUp accord-inner">
                         <div class="card-header p-0 border-0" id="heading-243">
-                            <button class="btn btn-link accordion-title border-0 collapsed" data-toggle="collapse" data-target="#collapse-243" aria-expanded="false" aria-controls="#collapse-243"><i class="fas fa-plus text-center d-flex align-items-center justify-content-center h-100"></i>What are the duties of a property manager?                        </button>
+                            <button class="btn btn-link accordion-title border-0 collapsed" data-toggle="collapse" data-target="#collapse-243" aria-expanded="false" aria-controls="#collapse-243"><i class="fas fa-plus text-center d-flex align-items-center justify-content-center h-100"></i>How does delivery and billing work?</button>
                         </div>
                         <div id="collapse-243" class="collapse " aria-labelledby="heading-243" data-parent="#accordion">
                             <div class="card-body accordion-body">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                <p>We procure fresh vegetables daily at 5am, clean and pack them thoroughly, and deliver them on the same day. If you are unavailable for delivery, we will deliver your order the next day. Billing is done monthly based on the chosen weekly plan.</p>
                             </div>
                         </div>
                     </div>
                     <div class="card border-0 wow fadeInUp accord-inner">
                         <div class="card-header p-0 border-0" id="heading-244">
-                            <button class="btn btn-link accordion-title border-0 collapsed" data-toggle="collapse" data-target="#collapse-244" aria-expanded="false" aria-controls="#collapse-244"><i class="fas fa-plus text-center d-flex align-items-center justify-content-center h-100"></i>Do we receive copies of all invoices paid?                        </button>
+                            <button class="btn btn-link accordion-title border-0 collapsed" data-toggle="collapse" data-target="#collapse-244" aria-expanded="false" aria-controls="#collapse-244"><i class="fas fa-plus text-center d-flex align-items-center justify-content-center h-100"></i>What if I want to cancel my subscription?</button>
                         </div>
                         <div id="collapse-244" class="collapse " aria-labelledby="heading-244" data-parent="#accordion">
                             <div class="card-body accordion-body">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                 <p>You can cancel your subscription at any time, and the balance amount will be credited back to you without any questions asked.</p>
                             </div>
                         </div>
                     </div>
-                    <div class="card border-0 wow fadeInUp accord-inner">
-                        <div class="card-header p-0 border-0" id="heading-245">
-                            <button class="btn btn-link accordion-title border-0 collapsed" data-toggle="collapse" data-target="#collapse-245" aria-expanded="false" aria-controls="#collapse-245"><i class="fas fa-plus text-center d-flex align-items-center justify-content-center h-100"></i>How are arrears handled?                        </button>
-                        </div>
-                        <div id="collapse-245" class="collapse " aria-labelledby="heading-245" data-parent="#accordion">
-                            <div class="card-body accordion-body">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                            </div>
-                        </div>
-                    </div>
+                 
                 </div>
             
             </div>

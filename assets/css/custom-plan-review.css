@@ -1,0 +1,50 @@
+body{  font-family:'open sans'; }
+h2, h3, h4, h6 {font-family: "Costa Ptf Demi"; color: #666666;font-weight:bold;}
+
+h6{font-size:24px;}
+.custom-plan{padding: 2rem 0 ; text-align: center;}
+.custom-plan span{color: #0f9b49;}
+.essential-veg{ background-color: #fff; padding: 2rem 0; box-shadow: 0 0 2px #00000045;border-radius: 5px;margin: 1rem 0;}
+.essential-veg .list-group-item{width:33.333%; border:none;}
+.list-group-item {background-color:#fff0;}
+.essential-veg .list-group{align-items: center;}        
+.essential-veg .list-group-item span{color: #666666; align-items: center; border: #f4f4f4 2px solid; padding: 5px 10px;margin:5px; width: auto;display: table-cell; }
+.essential-veg .list-group-item i{font-size: 30px; opacity: 0.5;}
+.btn-next{border-radius:20px;background-color: #fd632f; color: #fff; border-color:#fd632f;padding: .75rem 7rem; border:none; font-family: "Costa Ptf Demi";font-size: 18px;letter-spacing: 1px;}
+.essential-veg .list-group-item:nth-child(2){text-align: left;}
+.essential-veg .list-group-item:nth-child(4){text-align:justify;}
+.list-header{font-family:Costa Ptf; font-size:22px;}
+.check-box-1{font-size: 50px;}
+.custom-check{width: 25px;height: 25px ;border: 2px solid #909294;border-radius: 5px;color: #fff;} 
+input.custom-check:checked {  content: 'f00c';  background-color:#0f9b49; }
+
+.square-icon-style{
+    margin-top:0px !important;
+    }
+    .square-icon-style{
+    opacity: 0.2;
+    font-size: 35px;
+    color: #858585;
+    }
+    
+    .active {
+    color: #0f9b49 !important;
+    opacity: 1 !important;
+    }
+    
+@media(max-width:768px){
+.essential-veg h5{padding:0 1rem;}
+.essential-veg img{ width:80%;}
+.essential-veg .list-group-item{width:33.33%; border:none;}
+.essential-veg .list-group-item:nth-child(2){text-align: left;
+margin-left:-16px}
+.essential-veg .list-group-item:nth-child(3){width:26%;}
+.essential-veg .list-group-item{padding: 10px; font-size: 14px;}    
+h2{font-size:40px;}
+h3{font-size:32px;}  
+
+.prev-btn-style {
+    padding: 10px 50px !important;
+}
+
+}

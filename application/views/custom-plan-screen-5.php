@@ -9,6 +9,11 @@
 <div>
 <?php //include 'include/menu-sec.php' ?>
 </div>
+    
+    <style>
+         @media(max-width:768px){.plan-padd{padding: 5px;}}
+    
+    </style>
 <section>
 <div class="container mt-4">
     <div>
@@ -20,14 +25,16 @@
                     </div>
                 </div>
                 
+<!--
                         <div class="col-12 col-md-4">
-                            <div class="input-group-text-style">
+                            <div class="input-group-text-style" style="cursor:pointer;">
                                 <div class="icon-text" id="iconText">
                                     <p>I don't Need</p>
                                    <i class="fas fa-check-square square-icon-style" id="dontNeedIcon"></i>
                                 </div>
                             </div>
                         </div>
+-->
                       
         </div>
     </div>
@@ -36,12 +43,12 @@
     <div class="d-flex align-items-center justify-content-center text-center">
         <div class="custom-plan">
             <h2>Other <span>Vegetables</span></h2>
-            <p>We’ll make sure to send all of these every week</p>
+            <p>Eating vegetables provides essential vitamins, minerals, and dietary fiber necessary for overall health, immunity, and disease prevention.</p>
         </div>
     </div>
 
     
-    <div class="row mt-2 mb-4">
+    <div class="row mt-2 mb-4 plan-padd">
 
     
         <div class="col-3 col-md-3 card-pd-style">
@@ -153,7 +160,7 @@
             <div class="input-group">
                 <input type="text" class="form-control zero-btn-style-2 margin-right-style" 
                     placeholder="Kg"
-                    oninput="this.value = this.value.replace(/[^0-9]/g, '').slice(0, 3)"
+                    oninput="this.value = this.value.replace(/[^0-9]/g, '').slice(0, 2)"
                     maxlength="3"
                     oninput="this.style.borderColor = ''"
                     id = "kgInput"
@@ -176,9 +183,9 @@
     <div class="margins-of-sec">
     <p id="errortext" style="color:red;display:flex;justify-content: center;"></p><br>
         <div class="container button-style-1 mt-3 mb-4">
-            <a href="javascript:window.history.back()" class="text-white text-decoration-none mr-1">
+            <a href="<?= base_url('custom-plan-4')?>" class="text-white text-decoration-none mr-1">
             <button class="btn create-plan-button prev-btn-style">PREVIOUS</button></a>
-            <a id="custom-plan-final" style="cursor:pointer;" class="text-white text-decoration-none">
+            <a id="custom_review" style="cursor:pointer;" class="text-white text-decoration-none">
             <button onclick ="OtherVegetablesValidation()" class="btn create-plan-button prev-btn-style">NEXT</button></a>
         </div>
     </div>

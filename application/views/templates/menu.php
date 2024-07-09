@@ -9,9 +9,8 @@
             <div class="row">
                <div class="col-7 col-lg-3">
                    <div class="logo">
-                       <a href="index.php"><img src="<?= base_url('assets/images/logo.png') ?>"
- alt="Birth Right by Rainbow Hospitals"></a>
-                       <span class="vizag-text">Vizag</span>
+                       <a href="index.php"><img src="<?= base_url('assets/images/logo.png') ?>" alt="Birth Right by Rainbow Hospitals"></a>
+<!--                       <span class="vizag-text">Vizag</span>-->
                     </div>
                   
                     
