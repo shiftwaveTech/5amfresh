@@ -17,7 +17,7 @@
                        <a class="what-button" href="https://www.whatsapp.com/"><i class="fa-brands fa-whatsapp"></i></a>
                           <a class="call-button call-desk" href="tel:+911234567890"><i class="fa-solid fa-phone-volume"></i>9876543210</a>
                           
-                          <i class="fal fa-solid fa-bars mob-bar-icon" data-bs-toggle="modal" data-bs-target="#mob-menu"></i>
+                          <i style="cursor:pointer;" class="fal fa-solid fa-bars mob-bar-icon" data-bs-toggle="modal" data-bs-target="#mob-menu"></i>
                     </div>
                 </div>
                 <div class="col-5 d-block d-lg-none text-end">
