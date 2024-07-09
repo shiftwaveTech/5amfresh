@@ -3,13 +3,13 @@
         <div class="container">
             <div class="row">
 
-                <div class="col-md-3 col-12">
+                <div class="col-md-3 d-none d-md-block">
                     <div class="footer-sec-1">  
                         <img src="<?= base_url('assets/images/logo.png')?>" style="width:200px;" >
                     </div>    
                 </div>
 
-                <div class="col-md-3 col-6">
+                <div class="col-md-3 col-6 mb-3">
                     <div class="footer-sec-1">
                         <h3>Need Help? </h3>
                         <ul>
@@ -25,7 +25,7 @@
                     </div>
                 </div>
 
-                <div class="col-md-3 col-6">
+                <div class="col-md-3 col-6 mb-3">
                     <div class="footer-sec-1">  
                         <h3>Subscribe</h3>
                          <ul>
@@ -39,7 +39,7 @@
                     </div>    
                 </div>
 
-                <div class="col-md-3 col-6">
+                <div class="col-md-3 mb-3">
                     <div class="footer-sec-1">  
                     <h3>Find Us</h3>
                         <p>CBM Compound, Visakhapatnam, AP 530013</p>
@@ -50,8 +50,8 @@
         </div>
         
         <div class="col-12 text-center footer-bootom" >
-            <p class="copy-right-sec">&copy; 2024 5amfresh. All rights reseved. </p>
-            <p>Developed by <a href="https://shiftwave.com/" target="_blank">Shiftwave</a></p>
+            <p class="copy-right-sec">&copy; 2024 5am Fresh. All rights reserved. </p>
+            <p>Developed by <a href="https://www.shiftwave.com/" target="_blank">Shiftwave</a></p>
             <div class="footer-icons">
             <i class="fa-brands fa-x-twitter pr-1"></i>
             <i class="fa-brands fa-facebook-f pr-1"></i>

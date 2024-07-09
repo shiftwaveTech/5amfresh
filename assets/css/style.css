@@ -989,7 +989,7 @@ footer a, footer a:hover{
         padding: 2.5rem 20px;
     }
     header .logo img {
-        width: 110px;
+        width: 125px;
     }
     #top-scrollbutton{
         right:15px;
@@ -1007,6 +1007,12 @@ footer a, footer a:hover{
     }
     .heading2{
         font-size: 32px;
+    }
+    .smph{
+        font-size: 24px;
+    }
+    header .container-fluid.bottom-header{
+        padding: 0;
     }
 }
 

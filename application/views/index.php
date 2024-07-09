@@ -119,7 +119,7 @@
             <div class="col-md-2">
             </div>
             <div class="col-md-8 col-9">
-                <h2 class="heading2 text-uppercase mb-0">Pick a plan, suits your family</h2>
+                <h2 class="heading2 text-uppercase mb-0">Pick a plan, <span style="display: inline-block;">suits your family</span></h2>
             </div>
             <div class="col-md-2 col-3 pl-0">
                 <a class="compare-button">Compare Plans</a>
@@ -377,7 +377,7 @@
     <img src="./assets/images/peopleveg.jpg" class="why-container-side-img mb-4 mb-md-0">
 </div>
 <div class="col-12 col-md-6">
-    <h2 class="heading2 text-center text-md-left">I wasn’t happy seeing people being overcharged.</h2>
+    <h2 class="heading2 text-center text-md-left smph">I wasn’t happy seeing people being overcharged.</h2>
     <p>Every year during Karthika Masam, we organize an Annadanam for 1500 people a day for 41 days. We buy vegetables directly from wholesalers and noticed that their prices are 45 times lower than those in the retail market. One day, I packed 78 types of vegetables and distributed them to my friends, explaining the price difference. They were shocked to see how much they could save. That’s when the idea of 5am Fresh came to me – to provide the same experience to the people of Vizag. We source fresh vegetables, clean, pack, and deliver them at the lowest possible prices. Since we can’t offer the lowest prices in retail, we created a weekly plan to ensure the best rates for our customers.</p>
     <p class="owner-name"><strong>-Sarath Nalla</strong></p>
 </div>
@@ -399,10 +399,10 @@
                         <div class="card-body accordion-body">
                             <p>At 5am Fresh, we offer four weekly plans:</p>
                             <ol>
-                                <li> ₹399 per week: Includes 15 varieties of vegetables totaling 7kgs, recommended for a family of 2+1</li>
-                                <li> ₹599 per week: Includes 17 varieties of vegetables totaling 11kgs, recommended for a family of 2+2.</li>
-                                <li> ₹799 per week: Includes 17 varieties of vegetables totaling 17kgs, recommended for a family of 4+2.</li>
-                                <li>₹999 per week: Includes 17 varieties of vegetables totaling 23kgs, recommended for large families.</li>
+                                <li>₹399 per week: 15 varieties and a approx weight of 7 kgs</li>
+                                <li>₹599 per week: 17 varieties and a approx weight of 11kgs</li>
+                                <li>₹799 per week: 17 varieties and a approx weight of 17 kgs</li>
+                                <li>₹999 per week: 17 varieties and a approx weight of 23 kgs</li>
                             </ol>                                    
                             <p>Total weights are approximate.</p>
                         </div>
@@ -424,7 +424,7 @@
                     </div>
                     <div id="collapse-242" class="collapse " aria-labelledby="heading-242" data-parent="#accordion">
                         <div class="card-body accordion-body">
-                        <p>No, customers do not select specific vegetables. We pack the vegetables according to the chosen plan and deliver them on the selected day. You can change your delivery day up to one day before your scheduled delivery.</p>
+                        <p>No, customers do not select specific vegetables. We pack the vegetables according to the chosen plan and deliver them on the selected day.</p>
                         </div>
                     </div>
                 </div>
@@ -478,7 +478,7 @@
 
 <!-- footer above section  -->
 <div class="footer-above-sec" id="contact_calling">
-    <div class="mb-2">
+    <div class="">
         <div class="container">
             <div class="d-flex flex-row">  
                 <div>                                       
