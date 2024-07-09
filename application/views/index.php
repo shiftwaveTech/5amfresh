@@ -122,7 +122,7 @@
                 <h2 class="heading2 text-uppercase mb-0">Pick a plan, suits your family</h2>
             </div>
             <div class="col-md-2 col-3 pl-0">
-                <a class="compare-button">Compare Plans</a>
+                <a style="text-decoration:none;" href="" class="compare-button">Compare Plans</a>
             </div>
         </div>
         <div class="row mbp">
